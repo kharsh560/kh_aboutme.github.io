@@ -1,218 +1,417 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
-    text-align: center;
-    font-family: 'Merriweather', serif;
-    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: black;
+    overflow-x: hidden;
+    /* Its used to get rid of the horizontal scrooling!!!! */
+
 }
 
-hr {
-    border-style: dotted;
-    border-width: 8px 0 0 0;
-    width: 5%;
-    margin: 40px auto 40px auto;
-    border-color: #296E85;
+/* #####################################################################  Header portion ##################################################################### */
+
+#header {
+    width: 100%;
+    /* height: 7vh; */
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#namedLogo {
+    cursor: default;
+}
+.logoFirstLetter {
+    color: maroon;
+    font-size: xx-large;
+    font-weight: bolder;
 }
 
-.no1-top_images {
-    background-color: #87CEEB;
-    margin-bottom: 30px;
+.navItems {
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
 }
 
-.mountain {
-    margin: auto auto 0px auto;
+.navItems a {
+    margin: 10px 20px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
     position: relative;
-    top: 4px;
 }
 
-.top_container {
+.navItems a::after {
+    content: '';
+    background: red;
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.2s;
+}
+
+.navItems a:hover::after {
+    width: 100%;
+}
+
+#intro {
+    display: flex;
+    justify-content: center;
     padding: 20px;
 }
 
-.name {
-    /* font-size: 3em; */
-    font-size: 2.8125em;
-    font-family: 'Abril Fatface', cursive;
-    /* 1em=32px*/
+.myName {
+    font-family: 'Montserrat', sans-serif;
+    color: maroon;
 }
 
-.image_container {
-    padding: 10px 10px 0px 10px;
+.aboutMeWriteup {
+    width: 50%;
+    font-size: larger;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    line-height: 1.3;
 }
 
-.hello {
+.aboutMeWriteup h1 {
+    margin: 0;
+}
+
+.myPoster {
+    height: 18%;
+    width: 18%;
+    object-fit: fill;
+    position: relative;
+    bottom: 30px;
+}
+
+/* #####################################################################  About me portion ##################################################################### */
+
+#aboutMeContainer {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 40px;
+}
+
+.myDp {
+    object-fit: cover;
+    height: 300px;
+    margin: 20px;
+    border-radius: 30px;
+}
+
+.aboutMeDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.aboutMeDetails h1 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+.aboutMeDetails p {
+    font-weight: 100;
+    opacity: 0.7;
+    margin: 0;
+}
+
+.aboutMeTabs {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 10px;
+}
+
+.aboutMeTabs p {
+    margin-right: 50px;
+    font-size: large;
+    cursor: pointer;
+    position: relative;
+}
+
+#skills {
+    color: red;
+}
+
+.aboutMeTabs p::after {
+    content: '';
+    background: red;
+    width: 0%;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.2s;
+}
+
+.aboutMeTabs p:hover::after {
+    width: 100%;
+}
+
+.activeTab {
+    display: block;
+}
+
+.inactiveTab {
+    display: none;
+}
+
+.aboutMeInfoTopic {
+    color: red;
+    margin-top: 10px;
+}
+
+/* #####################################################################  Portfolio portion ##################################################################### */
+#myWork {
+    font-family: 'Libre Baskerville', serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.myPortfolioContainer {
+    margin: 40px 0 40px;
+    width: 100%;
+    /* display: flex;
+    justify-content: center;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 3fr));
+}
+
+.myPortfolioContainer img {
+    object-fit: cover;
+    width: 250px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 40px;
+    transition: transform 0.5s;
+}
+
+.work:hover img {
+    transform: translateY(-6px);
+}
+
+.work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.layer {
+    width: 250px;
+    height: 321px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: smaller;
+    font-weight: lighter;
+    position: absolute;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), maroon);
+    border-radius: 21px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    cursor: default;
+}
+
+.work:hover .layer {
+    opacity: 1;
+}
+
+.layer p {
+    width: 220px;
+    margin: 0;
+    opacity: 0.8;
+}
+
+.layer h3 {
+    font-size: larger;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+
+#extLink {
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+    background-size: auto;
+    cursor: pointer;
+}
+
+#dhun {
+    filter: drop-shadow(3px 3px 10px red);
+    position: relative;
+    bottom: 10px;
+}
+
+.centering {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.showMoreButton {
+    background-color: black;
+    border-style: solid;
+    border-color: maroon;
+    color: whitesmoke;
+    height: fit-content;
+    width: fit-content;
+    font-family: 'Libre Baskerville', serif;
+    font-size: larger;
+}
+
+.showMoreButton:hover {
+    background-color: maroon;
+    border-color: whitesmoke;
+}
+
+.invisible {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.visible {
+    display: inline-flex;
+    /* When I kept it to "none" ; the layer appeared at lower level than supposed! */
+    opacity: 1;
+}
+
+/* #####################################################################  Blog portion ##################################################################### */
+#blogTopic {
+    display: flex;
+    margin-top: 100px;
+}
+
+.blogIntro {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Libre Baskerville', serif;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    background: rgba(253, 0, 0, 0.7);
+    border-radius: 10px;
+    position: relative;
+    left: 325px;
+
+}
+
+.blogIntro h4 {
     width: 60%;
-    margin: auto;
 }
 
-.kh_pic {
-    border-radius: 50%;
-    height: auto;
-    width: 30%;
+.blogHeading {
+    height: 220px;
+    width: 110px;
+    border-top-right-radius: 110px;
+    border-bottom-right-radius: 110px;
+    /* background-color: red;
+    opacity: 0.6; */
+    background: rgba(245, 5, 5, 0.4);
+    display: flex;
+    align-items: center;
+    font-family: 'Libre Baskerville', serif;
 }
 
-.p1 {
-    width: 40%;
-    margin: auto;
+#blogMainContainer {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* .div_skills {
-    width: 40%;
-    margin: auto;
-    line-height: 2;
-} */
-.below_my_skill {
-    /* margin: 20px auto 20px auto; */
-    width: 40%;
-    margin: auto;
+.paraDiv {
+    background: rgba(165, 42, 42, 0.5);
+    border-radius: 20px;
+    width: 70%;
+    margin: 30px 0;
+    padding-bottom: 10px;
 }
 
-.skills_png {
-    width: 30%;
-    float: left;
-    margin-right: 30px;
+#lastUpdated {
+    opacity: 0.4;
+    position: relative;
+    top: 10px;
+    left: 10px;
 }
 
-.p2 {
-    width: auto;
-    /* margin: auto; */
-    text-align: left;
-    /* clear: left; */
+.contentInPara {
+    padding: 30px;
+    margin: 10px;
+    letter-spacing: 1px;
+    line-height: 1.2;
 }
 
-.webdev_png {
-    width: 30%;
-    float: right;
-    margin-left: 30px;
+#ulOfFrontendContent {
+    padding-bottom: 20px;
+    margin: 0;
 }
 
-.below_webd {
-    width: 40%;
-    margin: 50px auto 50px auto;
-
-}
-
-.p3 {
-    width: auto;
-    /* margin: auto; */
-    text-align: left;
-    /* clear: left; */
+/* ######################################################### Contact portion ######################################################### */
+#contactMeMainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact-me {
-    width: 30%;
-    margin: 80px auto auto auto;
-}
-
-.top_h1 {
-    color: #1E5162;
-    font-family: 'Merriweather', serif;
-    /* line-height: 1; */
-}
-
-.coder {
-    color: #296E85;
-    font-family: 'Montserrat Subrayada', sans-serif;
-    font-size: 1.25rem;
-    text-align: center;
-
-}
-
-.top_cloud {
-    position: relative;
-    left: 250px;
-    padding-top: 50px;
-}
-
-.down_cloud {
-    position: absolute;
-    left: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .mail_png {
-    /* height: auto; */
-    width: 14%;
-    /* float: right; */
-    /* position: absolute; */
-    /* right: 60px; */
+    width: 15%;
 }
 
-.contact {
+
+.btn-grad {
+    background-image: linear-gradient(to right, #C04848 0%, #480048 51%, #C04848 100%);
+    margin: 10px;
+    padding: 15px 45px;
     text-align: center;
-    margin-top: 50px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    text-decoration: none;
 }
-
-.p4 {
-    width: auto;
-    /* margin: auto; */
-    text-align: center;
-    margin-bottom: 50px;
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
 }
-
-h3 {
-    color: #11999E;
-    text-align: left;
-}
-
-h2 {
-    font-weight: normal;
-}
-
 .bottom_container {
-    margin-top: 50px;
-    background-color: #66BFBF;
-    color: #11999E;
-    line-height: 3;
-    word-spacing: 1rem;
-    padding-top: 20px;
+    padding: 10px;
 }
-
-.khh {
-    margin: 0px;
-    color: #EAF6F6;
-    scale: 70%;
-}
-
-.btn {
-    background: #11cdd4;
-    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
-    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
-    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
-    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
-    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
-    -webkit-border-radius: 8;
-    -moz-border-radius: 8;
-    border-radius: 8px;
-    font-family: Georgia;
-    color: #EAF6F6;
-    font-size: 20px;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-}
-
-.btn:hover {
-    background: #30e3cb;
-    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
-    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
-    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
-    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
-    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
-    text-decoration: none;
-}
-
-/* a {
-    color: #11999E;
-} */
 .footer-link {
-    font-family: 'Anton', sans-serif;
-    text-decoration: none;
-    color: #11999E;
+    padding: 10px;
 }
-.footer-link:hover {
-    color: #EAF6F6;
+.fa-brands:hover {
+    transform: scale(1.5);
 }
-
-.project {
-    color: #66BFBF;
-}
-.project:hover {
-    color: #1E5162;
+.khh {
+    margin-bottom: 0;
+    cursor: grab;
 }
