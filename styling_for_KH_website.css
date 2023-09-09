@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
     font-family: 'Ubuntu', sans-serif;
     color: white;
@@ -24,12 +25,16 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 #header .fa-solid {
-    display: none;    /* Its for mobile screen sizes */
+    display: none;
+    /* Its for mobile screen sizes */
 }
+
 #namedLogo {
     cursor: default;
 }
+
 .logoFirstLetter {
     color: maroon;
     font-size: xx-large;
@@ -83,9 +88,11 @@ body {
     letter-spacing: 2px;
     line-height: 1.3;
 }
+
 .posterImgForMobiles {
     display: none;
 }
+
 .aboutMeWriteup h1 {
     margin: 0;
 }
@@ -401,21 +408,26 @@ body {
     display: block;
     text-decoration: none;
 }
+
 .btn-grad:hover {
     background-position: right center;
     /* change the direction of the change here */
     color: #fff;
     text-decoration: none;
 }
+
 .bottom_container {
     padding: 10px;
 }
+
 .footer-link {
     padding: 10px;
 }
+
 .fa-brands:hover {
     transform: scale(1.5);
 }
+
 .khh {
     margin-bottom: 0;
     cursor: grab;
@@ -425,65 +437,80 @@ body {
 /* ######################################################### css for mobiles ######################################################### */
 
 @media only screen and (max-width: 980px) {
+
     /* ######################################## Header section ########################################*/
     .show {
         display: block !important;
     }
+
     #header {
         display: flex;
         justify-content: space-between;
+        font-size: xx-large;
     }
-    
+
     #namedLogo {
         position: relative;
         left: 20px;
+        font-size: xx-large;
     }
+
     .navItems {
         background-color: maroon;
         border-radius: 10px;
         margin: 4px;
     }
+
     .navItems a {
         display: none;
         margin: 10px 8px;
         font-size: smaller;
     }
+
     .fa-xmark {
         position: relative;
         top: 16px;
         /* right: 4px; */
         left: 3px;
     }
+
     .fa-xmark:hover {
         cursor: pointer;
     }
+
     .fa-bars {
         position: relative;
         right: 20px;
     }
+
     .fa-bars:hover {
         transform: scale(1.3);
     }
+
     /* ######################################## My Intro Section ######################################## */
     .myPoster {
         display: none;
     }
+
     .aboutMeWriteup {
         width: 100%;
         font-size: smaller;
         display: flex;
         justify-content: space-between;
     }
+
     .aboutMeWriteup h1 {
         width: 30%;
     }
+
     .aboutMeWriteup p {
         display: none;
     }
+
     .posterImgForMobiles {
         display: inline;
-        height: 95%;
-        width: 100%;
+        max-height: 95%;
+        max-width: 100%;
         position: relative;
         bottom: 30px;
         border-radius: 40px;
@@ -493,14 +520,28 @@ body {
     #aboutMeContainer {
         display: inline;
     }
+
     .myDp {
-        position: relative;
-        left: 100px;
+        /* position: relative;
+        left: 100px; */
+        display: block;
+        /* Remove any default inline spacing */
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
     }
+
     .aboutMeDetails {
         padding: 20px;
     }
-    
+
+    /* ######################################## Portfolio Section ######################################## */
+
+    .myPortfolioContainer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(600px, 3fr));
+    }
+
     /* ######################################## Blog Section ######################################## */
 
     #blogTopic {
@@ -508,7 +549,7 @@ body {
         justify-content: center;
         align-items: center;
     }
-    
+
     .blogHeading {
         height: 220px;
         width: 110px;
