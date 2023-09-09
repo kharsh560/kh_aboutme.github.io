@@ -44,6 +44,27 @@ document.querySelector(".showMoreButton").addEventListener("click", () => {
     
 })
 
+// code to show or hide the nav bars:-
+document.querySelector(".fa-bars").addEventListener("click", () => {
+    document.querySelector(".fa-bars").classList.toggle('show');
+    for(let i=0; i<document.querySelectorAll(".navItems a").length; i++) {
+        document.querySelectorAll(".navItems a")[i].classList.toggle('show');
+    }
+    document.querySelector(".fa-xmark").classList.toggle('show');
+    document.querySelector(".navItems").style.padding = '10px';
+    // document.querySelector(".navItems a").classList.toggle('show');
+})
+
+document.querySelector(".fa-xmark").addEventListener("click", () => {
+    document.querySelector(".fa-xmark").classList.toggle('show');
+    for(let i=0; i<document.querySelectorAll(".navItems a").length; i++) {
+        document.querySelectorAll(".navItems a")[i].classList.toggle('show');
+    }
+    document.querySelector(".fa-bars").classList.toggle('show');
+    document.querySelector(".navItems").style.padding = '0px';
+    // document.querySelector(".navItems a").classList.toggle('show');
+})
+
 
 
 
