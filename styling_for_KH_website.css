@@ -377,7 +377,7 @@ body {
 #lastUpdated {
     opacity: 0.4;
     position: relative;
-    top: 10px;
+    top: -10px;
     left: 10px;
 }
 
@@ -626,6 +626,12 @@ body {
 
     .paraDiv {
         width: 95%;
+    }
+    #lastUpdated {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 0;
     }
 
     /* ######################################## Contact Section ######################################## */
