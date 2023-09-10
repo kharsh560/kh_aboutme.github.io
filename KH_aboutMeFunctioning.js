@@ -32,22 +32,23 @@ document.querySelector("#education").addEventListener("click", () => {
 // Code to show less and show more for the portfolios
 
 document.querySelector(".showMoreButton").addEventListener("click", () => {
-    for(let i=0; i<document.querySelectorAll(".toggling").length; i++) {
+    for (let i = 0; i < document.querySelectorAll(".toggling").length; i++) {
         document.querySelectorAll(".toggling")[i].classList.toggle('visible');
     }
-    if((document.querySelector(".showMoreButton").textContent) == 'Show more') {
+    if ((document.querySelector(".showMoreButton").textContent) == 'Show more') {
         document.querySelector(".showMoreButton").textContent = 'Show less';
     }
-    else if((document.querySelector(".showMoreButton").textContent) == 'Show less') {
+    else if ((document.querySelector(".showMoreButton").textContent) == 'Show less') {
         document.querySelector(".showMoreButton").textContent = 'Show more';
     }
-    
+
 })
 
 // code to show or hide the nav bars:-
+
 document.querySelector(".fa-bars").addEventListener("click", () => {
     document.querySelector(".fa-bars").classList.toggle('show');
-    for(let i=0; i<document.querySelectorAll(".navItems a").length; i++) {
+    for (let i = 0; i < document.querySelectorAll(".navItems a").length; i++) {
         document.querySelectorAll(".navItems a")[i].classList.toggle('show');
     }
     document.querySelector(".fa-xmark").classList.toggle('show');
@@ -57,13 +58,26 @@ document.querySelector(".fa-bars").addEventListener("click", () => {
 
 document.querySelector(".fa-xmark").addEventListener("click", () => {
     document.querySelector(".fa-xmark").classList.toggle('show');
-    for(let i=0; i<document.querySelectorAll(".navItems a").length; i++) {
+    for (let i = 0; i < document.querySelectorAll(".navItems a").length; i++) {
         document.querySelectorAll(".navItems a")[i].classList.toggle('show');
     }
     document.querySelector(".fa-bars").classList.toggle('show');
     document.querySelector(".navItems").style.padding = '0px';
     // document.querySelector(".navItems a").classList.toggle('show');
 })
+
+// code to show or hide the nav bars after clicking the navitems anchor tags!!
+
+for (let i = 0; i < (document.querySelectorAll(".navItems a").length); i++) {
+    document.querySelectorAll(".navItems a")[i].addEventListener("click", () => {
+        document.querySelector(".fa-xmark").classList.toggle('show');
+        for (let i = 0; i < document.querySelectorAll(".navItems a").length; i++) {
+            document.querySelectorAll(".navItems a")[i].classList.toggle('show');
+        }
+        document.querySelector(".fa-bars").classList.toggle('show');
+        document.querySelector(".navItems").style.padding = '0px';
+    })
+}
 
 
 
