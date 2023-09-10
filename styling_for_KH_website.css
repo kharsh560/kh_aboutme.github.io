@@ -82,7 +82,7 @@ body {
 }
 
 .aboutMeWriteup {
-    width: 50%;
+    width: 70%;
     font-size: larger;
     font-weight: bolder;
     letter-spacing: 2px;
@@ -109,8 +109,21 @@ body {
 
 #aboutMeContainer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin: 40px 0 40px;
+}
+
+#aboutMeContainerDpAndWriteup {
+    display: flex;
+    justify-content: center;
+}
+
+#aboutMeContainerWriteup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
 }
 
 .myDp {
@@ -118,6 +131,9 @@ body {
     height: 300px;
     margin: 20px;
     border-radius: 30px;
+    position: relative;
+    bottom: 40px;
+
 }
 
 .aboutMeDetails {
@@ -303,11 +319,12 @@ body {
 /* #####################################################################  Blog portion ##################################################################### */
 #blogTopic {
     display: flex;
+    align-items: center;
     margin-top: 100px;
 }
 
 .blogIntro {
-    width: 30%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -318,7 +335,7 @@ body {
     background: rgba(253, 0, 0, 0.7);
     border-radius: 10px;
     position: relative;
-    left: 325px;
+    left: 190px;
 
 }
 
@@ -372,8 +389,10 @@ body {
 }
 
 #ulOfFrontendContent {
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
     margin: 0;
+    position: relative;
+    left: 20px;
 }
 
 /* ######################################################### Contact portion ######################################################### */
@@ -436,7 +455,7 @@ body {
 
 /* ######################################################### css for mobiles ######################################################### */
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 600px) {
 
     /* ######################################## Header section ########################################*/
     .show {
@@ -444,9 +463,10 @@ body {
     }
 
     #header {
+        width: 100vw;
         display: flex;
         justify-content: space-between;
-        font-size: xx-large;
+        /* font-size: xx-large; */
     }
 
     #namedLogo {
@@ -493,20 +513,21 @@ body {
     }
 
     .aboutMeWriteup {
-        width: 100%;
+        /* width: 100%; */
         font-size: smaller;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     .aboutMeWriteup h1 {
-        width: 30%;
+        width: 65%;
     }
 
     .aboutMeWriteup p {
         display: none;
     }
 
+    /* 
     .posterImgForMobiles {
         display: inline;
         max-height: 95%;
@@ -514,7 +535,7 @@ body {
         position: relative;
         bottom: 30px;
         border-radius: 40px;
-    }
+    } */
 
     /* ######################################## About Me Section ######################################## */
     #aboutMeContainer {
@@ -529,33 +550,42 @@ body {
         margin-left: auto;
         margin-right: auto;
         max-width: 100%;
+        top: 20px;
     }
 
     .aboutMeDetails {
         padding: 20px;
     }
 
+    .aboutMeDetails h1 {
+        width: 100%;
+        text-align: center;
+    }
+
     /* ######################################## Portfolio Section ######################################## */
 
     .myPortfolioContainer {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(600px, 3fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
     }
 
     /* ######################################## Blog Section ######################################## */
-
+    .blogMainContainer {
+        width: 100vw;
+    }
     #blogTopic {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
     .blogHeading {
-        height: 220px;
-        width: 110px;
+        height: 110px;
+        width: 220px;
         border-top-left-radius: 110px;
-        border-bottom-left-radius: 110px;
-        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 110px;
         border-bottom-right-radius: 0;
         /* background-color: red;
         opacity: 0.6; */
@@ -563,12 +593,22 @@ body {
         display: flex;
         align-items: center;
         font-family: 'Libre Baskerville', serif;
+        margin-bottom: 10px;
+    }
+
+    .blogHeading h1 {
+        position: relative;
+        left: 54px;
     }
 
     .blogIntro {
         position: static;
         width: 70%;
         margin-left: 10px;
+    }
+
+    .paraDiv {
+        width: 95%;
     }
 
     /* ######################################## Contact Section ######################################## */
