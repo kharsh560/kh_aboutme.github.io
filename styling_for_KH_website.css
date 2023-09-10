@@ -461,6 +461,9 @@ body {
     .show {
         display: block !important;
     }
+    body {
+        overflow-x: hidden;
+    }
 
     #header {
         width: 100vw;
@@ -515,7 +518,7 @@ body {
     .myPoster {
         display: none;
     }
-
+    
     .aboutMeWriteup {
         /* width: 100%; */
         font-size: smaller;
@@ -545,7 +548,17 @@ body {
     #aboutMeContainer {
         display: inline;
     }
-
+    #aboutMeContainerDpAndWriteup {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #aboutMeContainerWriteup {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+    }
     .myDp {
         /* position: relative;
         left: 100px; */
