@@ -51,7 +51,7 @@ document.querySelector(".fa-bars").addEventListener("click", () => {
         document.querySelectorAll(".navItems a")[i].classList.toggle('show');
     }
     document.querySelector(".fa-xmark").classList.toggle('show');
-    document.querySelector(".navItems").style.padding = '10px';
+    document.querySelector(".navItems").style.padding = '5px';
     // document.querySelector(".navItems a").classList.toggle('show');
 })
 
