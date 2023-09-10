@@ -466,7 +466,6 @@ body {
         width: 100vw;
         display: flex;
         justify-content: space-between;
-        /* font-size: xx-large; */
     }
 
     #namedLogo {
@@ -479,6 +478,8 @@ body {
         background-color: maroon;
         border-radius: 10px;
         margin: 4px;
+        position: relative;
+        right: 15px;
     }
 
     .navItems a {
