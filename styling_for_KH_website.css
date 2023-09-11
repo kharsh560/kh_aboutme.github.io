@@ -502,8 +502,8 @@ p {
 
     .fa-xmark {
         position: fixed;
-        top: 20px;
-        right: 8px;
+        top: 22px;
+        right: 16px;
     }
 
     .fa-xmark:hover {
