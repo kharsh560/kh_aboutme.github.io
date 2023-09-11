@@ -12,8 +12,12 @@ body {
     background-color: black;
     overflow-x: hidden;
     /* Its used to get rid of the horizontal scrooling!!!! */
-
 }
+
+p {
+    text-align: justify;
+}
+
 
 /* #####################################################################  Header portion ##################################################################### */
 
@@ -36,7 +40,7 @@ body {
 }
 
 .logoFirstLetter {
-    color: maroon;
+    color: red;
     font-size: xx-large;
     font-weight: bolder;
 }
@@ -78,7 +82,7 @@ body {
 
 .myName {
     font-family: 'Montserrat', sans-serif;
-    color: maroon;
+    color: red;
 }
 
 .aboutMeWriteup {
@@ -101,8 +105,8 @@ body {
     height: 18%;
     width: 18%;
     object-fit: fill;
-    position: relative;
-    bottom: 30px;
+    /* position: relative;
+    bottom: 30px; */
 }
 
 /* #####################################################################  About me portion ##################################################################### */
@@ -112,6 +116,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 40px 0 40px;
+    transform: scale(1.2);
 }
 
 #aboutMeContainerDpAndWriteup {
@@ -132,7 +137,8 @@ body {
     margin: 20px;
     border-radius: 30px;
     position: relative;
-    bottom: 40px;
+    bottom: 30px;
+    transform: scale(0.9);
 
 }
 
@@ -141,6 +147,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    width: 50%;
 }
 
 .aboutMeDetails h1 {
@@ -287,6 +294,9 @@ body {
     display: flex;
     justify-content: center;
 }
+.centering a {
+    text-decoration: none;
+}
 
 .showMoreButton {
     background-color: black;
@@ -296,12 +306,7 @@ body {
     height: fit-content;
     width: fit-content;
     font-family: 'Libre Baskerville', serif;
-    font-size: larger;
-}
-
-.showMoreButton:hover {
-    background-color: maroon;
-    border-color: whitesmoke;
+    font-size: small;
 }
 
 .invisible {
@@ -558,6 +563,7 @@ body {
         flex-direction: column;
         align-items: center;
         width: 70%;
+        transform: scale(1.2);
     }
     .myDp {
         /* position: relative;
@@ -572,6 +578,7 @@ body {
 
     .aboutMeDetails {
         padding: 20px;
+        width: 95%;
     }
 
     .aboutMeDetails h1 {
