@@ -160,6 +160,11 @@ p {
     margin: 0;
 }
 
+#GDSCpost {
+    color: #C04848;
+    font-weight: bolder;
+}
+
 .aboutMeTabs {
     display: flex;
     justify-content: space-between;
@@ -242,6 +247,15 @@ p {
     align-items: center;
 }
 
+#techStacks {
+    margin-top: 10px;
+}
+
+#tailwindIcon {
+    position: relative;
+    top: 4px;
+}
+
 .layer {
     width: 250px;
     height: 321px;
@@ -272,7 +286,7 @@ p {
 .layer h3 {
     font-size: larger;
     font-weight: bolder;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 #extLink {
@@ -307,6 +321,7 @@ p {
     width: fit-content;
     font-family: 'Libre Baskerville', serif;
     font-size: small;
+    cursor: pointer;
 }
 
 .invisible {
