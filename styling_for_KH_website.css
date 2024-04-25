@@ -160,7 +160,7 @@ p {
     margin: 0;
 }
 
-#GDSCpost {
+.GDSCpost {
     color: #C04848;
     font-weight: bolder;
 }
@@ -376,10 +376,64 @@ p {
     font-family: 'Libre Baskerville', serif;
 }
 
+/* Slider styling */
+
+#sliderContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.fa-backward:hover {
+    font-size: x-large;
+    transform: translateX(-4px);
+}
+.fa-forward:hover {
+    font-size: x-large;
+    transform: translateX(4px);
+}
+
+#customSlider {
+    width: 20%;
+    margin-left: 20px;
+    margin-right: 20px;
+    appearance: none;
+    height: 5px;
+    border-radius: 5px;
+    background-color: aquamarine;
+    /* position: relative;
+    top: 7px; */
+    /* transition: value 2s; */
+}
+
+#sliderButtonsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    width: 70%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.05), #0a85e3);
+    border-radius: 20px;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1), -5px -5px 5px black;
+}
+
+.sliderButtons {
+    background-color: aqua;
+    opacity: 0.6;
+    border-radius: 8px;
+    font-weight: bolder;
+    font-size: medium;
+}
+
 #blogMainContainer {
     font-family: 'Ubuntu', sans-serif;
     color: white;
-    margin-top: 50px;
+    margin-top: 10px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -390,7 +444,7 @@ p {
     background: rgba(165, 42, 42, 0.5);
     border-radius: 20px;
     width: 70%;
-    margin: 30px 0;
+    margin-bottom: 20px;
     padding-bottom: 10px;
 }
 
@@ -633,6 +687,7 @@ p {
         align-items: center;
         font-family: 'Libre Baskerville', serif;
         margin-bottom: 10px;
+        /* margin-left: 80px; */
     }
 
     .blogHeading h1 {

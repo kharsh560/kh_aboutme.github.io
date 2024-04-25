@@ -17,6 +17,7 @@
     <link rel="icon" href="https://lirp.cdn-website.com/e5baeb8a/dms3rep/multi/opt/kh_favicon-01-1920w.png">
 
     <!-- Code to attach fontawesome -->
+    <!-- <script src="https://kit.fontawesome.com/e7bf5cfb41.js" crossorigin="anonymous"></script> -->
     <script src="https://kit.fontawesome.com/e7bf5cfb41.js" crossorigin="anonymous"></script>
 
     <!-- Code to attach the google fonts -->
@@ -153,7 +154,7 @@
                         personalized responses for tax benefits based on income. We also received recognition by being shortlisted for the GDSC India regional Bootcamp, where we received personalized
                         mentorship from Google Developers. <br> <br>
 
-                        => You can see this post of mine on <a id="GDSCpost" href="https://www.linkedin.com/posts/kumar-harsh-468a22253_top10-top100-syncsphere-activity-7185929396371816451-Nwh-?utm_source=share&utm_medium=member_desktop">Linkedin</a> for more info related to these events.
+                        => You can see this post of mine on <a class="GDSCpost" href="https://www.linkedin.com/posts/kumar-harsh-468a22253_top10-top100-syncsphere-activity-7185929396371816451-Nwh-?utm_source=share&utm_medium=member_desktop">Linkedin</a> for more info related to these events.
                     </p>
                 </div>
                 <!-- <div class="aboutMeInfoTopic">
@@ -392,17 +393,32 @@
             <h1>BLOG</h1>
         </div>
         <div class="blogIntro">
-            <h4>Here, I document my journey as a software developer, encompassing the projects I have undertaken, my
-                progress in Data Structures and Algorithms (DSA), and my experiences in the field of Data Science, a
-                vital component of my coursework in Artificial Intelligence and Machine Learning (AI&ML), among other
+            <h4>Here, I document my journey as a software developer, encompassing the projects I have undertaken in full stack web development, my
+                progress in Data Structures and Algorithms (DSA), and my experiences in the fieldAI & ML, and other
                 noteworthy achievements.
             </h4>
         </div>
     </div>
 
+    <!-- ########################################################## Slider for post ##########################################################  -->
+    <div id="sliderContainer">
+        <label for="customSlider">Timeline :-</label>
+        <span id="sliderValue">20</span>
+        <div id="sliderButtonsContainer">
+            <!-- <i class="fa-solid fa-forward" style="color: #74C0FC;"></i> -->
+            <button class="sliderButtons" id="sliderButtonBk"n>Previous</button>
+            <!-- <i id="sliderButtonBk" class="fa-solid fa-backward" style="color: #FFD43B;"></i> -->
+            <input type="range" id="customSlider" min="0" max="6" value="0" step="1">
+            <!-- <i id="sliderButtonsFwd" class="fa-solid fa-forward" style="color: #FFD43B;"></i> -->
+            <button class="sliderButtons" id="sliderButtonsFwd">Next</button>
+        </div>
+    </div>
+    
+    <!-- ############################################# Content of Blog begins ############################################# -->
+
 
     <div id="blogMainContainer">
-
+        <!-- 1 -->
         <div class="paraDiv">
             <h4 id="lastUpdated">Last Updated :- 26th June 2023</h4>
             <p class="contentInPara">
@@ -440,12 +456,16 @@
                 considered an expert, but I will grasp the intricacies of website front-end functionality. Subsequently,
                 during my summer break (anticipated to commence on August 1, 2023, after the conclusion of my End-Term
                 exams on July 13, 2023), I intend to delve into back-end development and further deepen my knowledge of
-                Data Structures and Algorithms (DSA).</p>
-            </p>
+                Data Structures and Algorithms (DSA).
+                <br> <br>
+                Thankyou for reading the blog, Its Harsh signing off, hope to see you in my next blog!
+            </p> 
+                
+            </p> 
         </div>
 
-
-        <div class="paraDiv">
+        <!-- 2 -->
+        <div class="paraDiv inactiveTab">
             <h4 id="lastUpdated">Last Updated :- 24th August 2023</h4>
             <p class="contentInPara">
                 As of August 24th, I have some new update to share regarding my ongoing coding journey. I had
@@ -464,10 +484,12 @@
                 <br>
                 I would like to express my gratitude to all those who have followed my journey and offered their
                 support. I look forward to sharing further updates with you soon! 
-            </p>
+                <br> <br>
+                Thankyou for reading the blog, Its Harsh signing off, hope to see you in my next blog!
+            </p> 
         </div>
-
-        <div class="paraDiv">
+        <!-- 3 -->
+        <div class="paraDiv inactiveTab">
             <h4 id="lastUpdated">Last Updated :- 26th August 2023</h4>
             <p class="contentInPara">
                 As of August 26th, I am excited to share a new update with you all. I have successfully created a music
@@ -484,10 +506,12 @@
 
                 I want to express my appreciation to all of you for following my journey and offering your support. I
                 look forward to sharing more updates with you in the near future! 
-            </p>
+                <br> <br>
+                Thankyou for reading the blog, Its Harsh signing off, hope to see you in my next blog!
+            </p> 
         </div>
-
-        <div class="paraDiv">
+        <!-- 4 -->
+        <div class="paraDiv inactiveTab">
             <h4 id="lastUpdated">Last Updated :- 8th September 2023</h4>
             <p class="contentInPara">
                 As of September 8th, I am delighted to share another update on my ongoing journey. I have completely
@@ -509,14 +533,114 @@
 
                 I want to express my gratitude to all of you for following my journey and offering your support. I look
                 forward to sharing more updates with you in the near future! 
-
-
-
-
-
-
+                <br> <br>
+                Thankyou for reading the blog, Its Harsh signing off, hope to see you in my next blog!
             </p>
         </div>
+        <!-- 5 -->
+        <div class="paraDiv inactiveTab">
+            <h4 id="lastUpdated">Last Updated :- 15th March 2024</h4>
+            <p class="contentInPara">
+                Well hello guys! Its been long time no see! Sorry, I couldn't update this blog section in recent times, was occupied in many other stuffs. like since last update
+                I have successfully started many things andfinished a few too! <br>
+                1) I finished 85% of the Chai aur Javascript playlist by none other than Hitesh Choudhary. <br>
+                2) I finally choose a platform to study DSA coompletely, and its GFG's course by none other than Sandeep Jain. Completed 6 modules (uptil searching). <br>
+                3) Started Chai aur React, and Chai aur backend playlists Simultaneously, but focusing on React first! Completed till L6 in Backend and till L11 in React. Ofcourse none other than Hitesh Choudhary! <br>
+                See, after studying Java Script in depth from this playlist called “Chai aur Javascript” taught by none other than
+                Hitesh Choudhary, I worked on some basic projects, about which I talked previously too, like :-<br> <br>
+                
+                1) I completely renovated my landing page which acts as a portfolio cum blog page. <br>
+                🔗 <a class="GDSCpost" href="https://kharsh560.github.io/kh_aboutme.github.io/#myWork">My Portfolio</a>  <br>
+                
+                2) I made this music streaming app, having all the important functions whose logic I designed myself. <br>
+                🔗 <a class="GDSCpost" href="https://kharsh560.github.io/dhun_Feel_the_Music_BY_Kumar_Harsh/">Dhun</a><br>
+                
+                3) Made this game called "Guess the Number" as a part of the hands-on project by Hitesh Choudhary. <br>
+                🔗 <a class="GDSCpost" href="https://kharsh560.github.io/GuessTheNumberBy_KumarHarsh/">Guess the Number</a>  <br>
+                
+                4) Made a Dice game for tossing purposes. <br>
+                🔗 <a class="GDSCpost" href="https://kharsh560.github.io/dicee_game_by_kumar_harsh/">Dice game</a><br>
+                
+                5) Made a Drumkit as a part of the hands-on project by Angela Yu. <br>
+                🔗 <a class="GDSCpost" href="https://kharsh560.github.io/Drumkit_by_kumar_harsh.github.io/">Drum Kit</a> <br> <br>
+                
+                Then, I took part in some hackathons wherein I explored the MERN stack, but with a different pedagogy, that is
+                "Implementing, then studying in-depth". So I worked on multiple projects on MERN without studying concepts in-depth
+                initially. It was just documentation, some reference videos, and 'implementation' along with a blurry knowledge of the
+                logic behind them. <br>
+                
+                Anyway, as a major project to explore MERN, I implemented a full-fledged one-to-one chat app based on MERN stack with
+                the help of a playlist by Piyush Agarwal. <br>
+                Doing so, I got to know the "overall flow" of how these technologies work. <br>
+                
+                Now, I am doing "Backend" and "React" on the channel "Chai aur Code" by the amazing tutor, Hitesh Choudhary.
+                Yes, I am able to do both of these together because I now have a very clear Idea of how things work. Now I am looking
+                for the "Why" aspect of it. Even, I feel that after having hands-on experience with these technologies, I am able to
+                grasp things faster and with much relatability, which goes missing with the other path of "studying, then implementing". <br>
+                
+                Also, most recently, I got to explore Google's Gemini. I integrated it into our project Sync-Sphere where I trained it
+                to act as a virtual assistant in chatbot format, solving the queries of the users related to our platform. <br>
+                
+                So, yeah, this is it. About my latest work. I will now keep posting my milestones regularly in this Blog section. <br>
+                Also, I have posted about this on my <a class="GDSCpost" href="https://www.linkedin.com/posts/kumar-harsh-468a22253_hello-folks-having-been-inspired-by-the-activity-7170155336438403072-jjyA?utm_source=share&utm_medium=member_desktop">Linkedin</a>  too,  so do check it out too. <br>
+                <br> 
+                Thankyou for reading the blog, Its Harsh signing off, hope to see you in my next blog!
+                </p> 
+        </div>
+        <!-- 6 -->
+        <div class="paraDiv inactiveTab">
+            <h4 id="lastUpdated">Last Updated :- 22nd April 2024</h4>
+            <p class="contentInPara">
+                Today, I am going to share two of my team's achievements! <br> <br>
+                I along with my team members Abhyuday Pratap Singh, Aditya Jaiswal and Akhilesh Malik, am excited to share our
+                experiences from two major events: <br> <br>
+                1) The Hackathon PitchTemberFest at the National Institute of Technology , Patna, and 2) The Google Solution Challenge
+                2024 (GDSC), which were held in December and February respectively! <br> <br>
+                
+                #1 At PitchTemberFest, we had the privilege of engaging with inspiring founders and securing a spot in the
+                hashtag#Top10, gaining valuable insights that shaped our project profoundly. <br> <br>
+                
+                #2 In the Google Solution Challenge, we elevated our project by integrating Google products like Gemini, enabling
+                personalized responses for tax benefits based on income. Although we didn't make it to the hashtag#Top100, presenting
+                our project was a significant milestone. We also received recognition by being shortlisted for the GDSC India regional
+                Bootcamp, where we received personalized mentorship from Google Developers. <br> <br>
+                
+                About our project:- <br>
+                Our project, Sync Sphere, addresses the disconnect between companies willing to give back, NGOs in need of funding, and
+                individuals wanting to contribute to social causes. <br>
+                Our primary focus is on SDG Goal 17 - Partnership of Goals. Sync Sphere acts as a centralized platform that simplifies
+                CSR funding, provides diverse project opportunities, and engages volunteers for maximum social impact. <br> <br>
+                
+                Key Features of Sync Sphere:- <br>
+                Key features of Sync Sphere include Gemini Chatbot Integration for personalized tax benefits calculation, the ability
+                for NGOs and individuals to create and publish projects, seamless PayPal payment integration for easy contributions,
+                swift access to CSR documents for companies evaluating projects, and the option for NGOs to accept or reject funding
+                from companies based on their interests. <br> <br>
+                
+                While our journey with Sync Sphere didn't land us in the Top 100, the experience of building it has been incredibly
+                rewarding and educational. Sync Sphere is still in development, and if you share our passion for social impact, we'd
+                love to connect and collaborate! <br> <br>
+                Thankyou for reading the blog, Its Harsh signing off, hope to see you in my next blog!
+            </p>
+        </div>
+
+        <!-- 7 -->
+        <div class="paraDiv inactiveTab">
+            <h4 id="lastUpdated">Last Updated :- 25th April 2024</h4>
+            <p class="contentInPara">
+                Hello guys, I am here to share a quick update on my React playlist! I have made three basic, but awesome and conceptually important projects on React using 
+                concepts like React Hooks, React Custom Hooks, React Components, UseEffect Hook, React Props and much more. All these concepts have been covered in just 
+                11 out of 34 lectures by Hitesh in his Chai aur React playlist. <br>
+                 So it would be fun to see what next lecture have to offer! <br> <br> 
+                Also I have hosted the projects made on Netlify! Here are the links to them:- <br>
+                1) 🔗 <a class="GDSCpost" href="https://kh-bg-changer.netlify.app/">BG Changer in React</a> <br>
+                2) 🔗 <a class="GDSCpost" href="https://kh-password-generator.netlify.app/">Random Password Generator</a> <br> 
+                3) 🔗 <a class="GDSCpost" href="https://github.com/kharsh560/currency_changer_by_kh">Currency Converter</a> <br> <br>
+                Thankyou for reading the blog, Its Harsh signing off, hope to see you in my next blog!
+            </p>
+        </div>
+
+
     </div>
 
     <!-- ############################################# Contact #############################################-->
