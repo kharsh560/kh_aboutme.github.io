@@ -762,12 +762,38 @@ hr:after {
         border-radius: 10px;
     }
 
+    /* #techStacks {
+        display: flex;
+        flex-direction: column;
+    } */
+
+    .htmlCssJsLogos {
+        padding: 4px;
+        display: flex;
+        justify-content: center;
+    }
+    .htmlCssJsLogos * {
+        margin: 3px;
+    }
+    .JsReactLogos {
+        padding: 4px;
+        display: flex;
+        justify-content: center;
+    }
+    .JsReactLogos * {
+        margin: 3px;
+    }
+    /* #techStacks .fa-square-js {
+        padding-left: 4px;
+    } */
+
     .tailwindCSSpngForMobiles {
         height: 35px !important;
         width: 35px !important;
         padding: 0 !important;
         position: relative;
-        top: 10px;
+        /* top: 22px; */
+        bottom: 18px;
     }
 
     .myPortfolioContainerMobilesParaDiv {
