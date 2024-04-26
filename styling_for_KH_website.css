@@ -408,12 +408,13 @@ hr:after {
     border-radius: 10px;
     position: relative;
     left: 190px;
+    padding: 10px;
 
 }
 
-.blogIntro h4 {
-    width: 60%;
-}
+/* .blogIntro h4 {
+    width: 90%;
+} */
 
 .blogHeading {
     height: 220px;
@@ -428,7 +429,7 @@ hr:after {
     font-family: 'Libre Baskerville', serif;
 }
 
-/* Slider styling */
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Slider styling ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
 
 #sliderContainer {
     display: flex;
@@ -481,6 +482,8 @@ hr:after {
     font-weight: bolder;
     font-size: medium;
 }
+
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Slider styling ends ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
 
 #blogMainContainer {
     font-family: 'Ubuntu', sans-serif;
@@ -863,6 +866,17 @@ hr:after {
         margin-bottom: 10px;
         /* margin-left: 80px; */
     }
+
+    /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Slider styling ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+
+    #sliderButtonsContainer {
+        width: 90%;
+    }
+    #customSlider {
+        width: 80%;
+    }
+
+
 
     .blogHeading h1 {
         position: relative;
