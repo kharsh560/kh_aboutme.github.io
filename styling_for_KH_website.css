@@ -762,6 +762,14 @@ hr:after {
         border-radius: 10px;
     }
 
+    .tailwindCSSpngForMobiles {
+        height: 35px !important;
+        width: 35px !important;
+        padding: 0 !important;
+        position: relative;
+        top: 10px;
+    }
+
     .myPortfolioContainerMobilesParaDiv {
         width: 60%;
         display: flex;
