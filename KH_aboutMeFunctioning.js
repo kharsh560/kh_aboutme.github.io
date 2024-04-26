@@ -93,19 +93,19 @@ for (let i = 0; i < document.querySelectorAll(".work").length; i++) {
 //   });
 // }
 // For Mobiles --
-
-for (let i = 0; i < document.querySelectorAll(".workMobiles").length; i++) {
-  var tapEvent = new Hammer(document.querySelectorAll(".workMobiles")[i]);
-  // document
-  //   .querySelectorAll(".workMobiles")
-  //   [i].addEventListener("touchend", () => {
-  // window.location.href =
-  //   document.querySelectorAll(".workMobiles a")[i].href;
-  //   });
-  tapEvent.on("tap", () => {
-    window.location.href = document.querySelectorAll(".workMobiles a")[i].href;
-  });
-}
+// Not working using the "hammer tap event" also!
+// for (let i = 0; i < document.querySelectorAll(".workMobiles").length; i++) {
+//   var tapEvent = new Hammer(document.querySelectorAll(".workMobiles")[i]);
+//   document
+//     .querySelectorAll(".workMobiles")
+//     [i].addEventListener("touchend", () => {
+//   window.location.href =
+//     document.querySelectorAll(".workMobiles a")[i].href;
+//     });
+//   tapEvent.on("tap", () => {
+//     window.location.href = document.querySelectorAll(".workMobiles a")[i].href;
+//   });
+// }
 
 // ########################################################## Code for numbering the workMobiles ##########################################################
 
