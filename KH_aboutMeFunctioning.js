@@ -79,10 +79,16 @@ for (let i = 0; i < document.querySelectorAll(".navItems a").length; i++) {
 }
 
 // ########################################################## Code to link entire WorkDiv to the webpage ##########################################################
-
+// For laptops
 for (let i = 0; i < document.querySelectorAll(".work").length; i++) {
   document.querySelectorAll(".work")[i].addEventListener("click", () => {
     window.location.href = document.querySelectorAll(".work a")[i].href;
+  });
+}
+// For Mobiles
+for (let i = 0; i < document.querySelectorAll(".workMobiles").length; i++) {
+  document.querySelectorAll(".workMobiles")[i].addEventListener("click", () => {
+    window.location.href = document.querySelectorAll(".workMobiles a")[i].href;
   });
 }
 
