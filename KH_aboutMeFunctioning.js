@@ -85,11 +85,20 @@ for (let i = 0; i < document.querySelectorAll(".work").length; i++) {
     window.location.href = document.querySelectorAll(".work a")[i].href;
   });
 }
-// For Mobiles
+// For Mobiles -- Using click
 for (let i = 0; i < document.querySelectorAll(".workMobiles").length; i++) {
   document.querySelectorAll(".workMobiles")[i].addEventListener("click", () => {
     window.location.href = document.querySelectorAll(".workMobiles a")[i].href;
   });
+}
+// For Mobiles -- Using tap
+for (let i = 0; i < document.querySelectorAll(".workMobiles").length; i++) {
+  document
+    .querySelectorAll(".workMobiles")
+    [i].addEventListener("touchend", () => {
+      window.location.href =
+        document.querySelectorAll(".workMobiles a")[i].href;
+    });
 }
 
 // ########################################################## Code for numbering the workMobiles ##########################################################
