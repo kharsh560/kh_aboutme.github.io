@@ -78,6 +78,14 @@ for (let i = 0; i < document.querySelectorAll(".navItems a").length; i++) {
   });
 }
 
+// ########################################################## Code to link entire WorkDiv to the webpage ##########################################################
+
+for (let i = 0; i < document.querySelectorAll(".work").length; i++) {
+  document.querySelectorAll(".work")[i].addEventListener("click", () => {
+    window.location.href = document.querySelectorAll(".work a")[i].href;
+  });
+}
+
 // ########################################################## Code for numbering the workMobiles ##########################################################
 
 for (let i = 0; i < document.querySelectorAll(".workMobiles").length; i++) {
