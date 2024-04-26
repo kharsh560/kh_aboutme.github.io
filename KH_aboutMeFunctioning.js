@@ -78,6 +78,13 @@ for (let i = 0; i < document.querySelectorAll(".navItems a").length; i++) {
   });
 }
 
+// ########################################################## Code for numbering the workMobiles ##########################################################
+
+for (let i = 0; i < document.querySelectorAll(".workMobiles").length; i++) {
+  document.querySelectorAll(".numberingWorkMobiles")[i].innerHTML = `${i + 1}`;
+}
+// document.querySelectorAll(".workMobiles")
+
 // ########################################################## For custom slider:- ##########################################################
 
 // const predefinedValues = [20, 50, 100, 500, 1000];

@@ -47,11 +47,16 @@
     <!--  ########################################################## Second layer, having Intro  ########################################################## -->
     <div id="intro">
         <div class="aboutMeWriteup">
-            <h1>Greetings!
+            <!-- greeting for Laptops -->
+            <h1 id="GreetingsForLaptop">Greetings!
                 <br>
-                <span class="myName">I'm KUMAR HARSH</span>,
+                <span class="myName">I'm KUMAR HARSH</span>
                 <br>
-                a Software Developer.
+                a Software Developer
+            </h1>
+            <!-- greeting for mobiles -->
+            <h1 id="GreetingsForMobiles">
+                Greetings! <span class="myName">I'm <br> KUMAR HARSH</span> <br> a Software Developer
             </h1>
             <!-- <div id="posterForMobiles"></div> -->
             <!-- <img class="posterImgForMobiles" src="imageResources/MyWebPageImg2.png" alt="posterForMobileViewers"> -->
@@ -72,7 +77,10 @@
             </p>
         </div>
         <img src="imageResources/MyWebPageImg3.png" class="myPoster" alt="myPoster">
+
     </div>
+
+
     <!--  ########################################################## intro section ends  ########################################################## -->
     <!--  ########################################################## Third portion of the website:- About Me  ########################################################## -->
 
@@ -84,14 +92,16 @@
                 <p>I am Kumar Harsh, an individual deeply passionate about coding and its various facets. <br>
                     My primary objectives within the four years of my B.Tech journey, will revolve around <br> acquiring
                     proficiency in four key areas:<br> <br>
-                    1. Programming in C/C++ and Python <br>
-                    2. DSA in C/C++ <br>
-                    3. Full Stack Web Development <br>
-                    4. Data Science:- thus exploring AI & ML! <br></p>
+                    1. Data Structures and Algorithms <br>
+                    2. Full Stack Web Development (MERN stack)  <br>
+                    3. Data Science:- thus exploring AI & ML!  <br>
+                    4. Exploring BlockChain & Web3 <br></p>
             </div>
         </div>
 
-        <div class="aboutMeDetails">
+        <hr>
+
+        <div class="aboutMeDetails ">
             <h3>A comprehensive overview of my accomplishments thus far encompasses:</h3>
             <div class="aboutMeTabs">
                 <p id="skills">Skills</p>
@@ -202,10 +212,15 @@
             </div>
         </div>
     </div>
+
+    <hr id="hrAboveMyWorkinLaptop">
+
     <!--  ########################################################## about me section ends  ########################################################## -->
     <!--  ########################################################## Portfolio section begins  ########################################################## -->
+    <!--  ########################################################## Portfolio section for Laptops ########################################################## -->
     <h1 id="myWork">My Work</h1>
-    <div class="myPortfolioContainer">
+    <div class="myPortfolioContainerLaptops">
+        <!-- 1 -->
         <div class="work">
             <img src="./imageResources/passCodeBgImg.jpeg" alt="RandomPasswordGenerator">
             <div class="layer">
@@ -233,6 +248,7 @@
                         src="imageResources/ExternalLink1.png" alt="extLinkIcon" id="extLink"></a>
             </div>
         </div>
+        <!-- 2 -->
         <div class="work">
             <img src="./imageResources/bgChangerReact.jpeg" alt="BGcolorChangerReact">
             <div class="layer">
@@ -261,6 +277,7 @@
                         src="imageResources/ExternalLink1.png" alt="extLinkIcon" id="extLink"></a>
             </div>
         </div>
+        <!-- 3 -->
         <div class="work">
             <img src="imageResources/GuessTheNumberPoster.avif" alt="GuessTheNumberGame">
             <div class="layer">
@@ -277,6 +294,8 @@
                     target="_blank"><img src="imageResources/ExternalLink1.png" alt="extLinkIcon" id="extLink"></a>
             </div>
         </div>
+
+        <!-- 4 -->
         <div class="work toggling invisible">
             <img src="imageResources/dhunBrandPic.png" alt="dhunMusicStreamingWebApp" id="dhun">
             <div class="layer">
@@ -294,6 +313,8 @@
                     target="_blank"><img src="imageResources/ExternalLink1.png" alt="extLinkIcon" id="extLink"></a>
             </div>
         </div>
+
+        <!-- 5 -->
         <div class="work toggling invisible">
             <img src="imageResources/DrumKitPoster.jpeg" alt="DrumKitGame">
             <div class="layer">
@@ -311,6 +332,8 @@
                     target="_blank"><img src="imageResources/ExternalLink1.png" alt="extLinkIcon" id="extLink"></a>
             </div>
         </div>
+
+        <!-- 6 -->
         <div class="work toggling invisible">
             <img src="imageResources/BMIposter2.webp" alt="BMIcalculator">
             <div class="layer">
@@ -328,6 +351,8 @@
                     target="_blank"><img src="imageResources/ExternalLink1.png" alt="extLinkIcon" id="extLink"></a>
             </div>
         </div>
+
+        <!-- 7 -->
         <div class="work toggling invisible">
             <img src="imageResources/DiceGamePoster.jpeg" alt="DiceGame" class=" DiceGame">
             <div class="layer">
@@ -346,6 +371,8 @@
                         src="imageResources/ExternalLink1.png" alt="extLinkIcon" id="extLink"></a>
             </div>
         </div>
+
+        <!-- 8 -->
         <div class="work toggling invisible">
             <img src="imageResources/BackGroundColorChangerPoster.jpeg" alt="BackGroundColorChanger"
                 class=" BackGroundColorChanger">
@@ -364,6 +391,8 @@
                     target="_blank"><img src="imageResources/ExternalLink1.png" alt="extLinkIcon" id="extLink"></a>
             </div>
         </div>
+
+        <!-- 9 -->
         <div class="work toggling invisible">
             <img src="imageResources/TimePoster.gif" alt="currentTime" class="currentTime">
             <div class="layer">
@@ -380,12 +409,217 @@
                     target="_blank"><img src="imageResources/ExternalLink1.png" alt="extLinkIcon" id="extLink"></a>
             </div>
         </div>
+
+        <!-- Over -->
     </div>
-    <div class="centering">
+    <div class="centering ">
         <a href="#myWork"><button class="showMoreButton btn-grad">Show more</button></a>
     </div>
 
+    <!--  ########################################################## Portfolio section for mobiles ########################################################## -->
+    <div class="myPortfolioContainerMobiles">
+        <!-- 1 -->
+        <div class="workMobiles">
+            <div class="myPortfolioContainerMobilesParaDiv">
+                <span class="numberingWorkMobiles"></span>
+                <h3>Random Password Generator</h3>
+                <!-- <p>A Random Password Generator is crucial for digital security. By generating unique combinations of characters, it
+                    prevents predictable patterns and reused credentials,
+                    significantly enhancing security against cyber threats and reducing data breach risks for both individuals and
+                    businesses. <br> This app build on React serves the same purpose. Do try it and let hackers dream of cracking your
+                    code!</p> -->
+                    <span id="techStacks">
+                        <i class="fa-brands fa-html5 fa-beat-fade fa-lg"></i>
+                        <i class="fa-brands fa-css3 fa-beat-fade fa-lg"></i>
+                        <svg id="tailwindIcon" height="20" preserveAspectRatio="xMidYMid" viewBox="0 0 256 154" width="20"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <linearGradient id="a" x1="-2.777778%" x2="100%" y1="32%" y2="67.555556%">
+                                <stop offset="0" stop-color="#2298bd" />
+                                <stop offset="1" stop-color="#0ed7b5" />
+                            </linearGradient>
+                            <path
+                                d="m128 0c-34.1333333 0-55.4666667 17.0666667-64 51.2 12.8-17.0666667 27.7333333-23.4666667 44.8-19.2 9.737481 2.4343704 16.697363 9.4985481 24.401067 17.3184 12.549689 12.7383704 27.07437 27.4816 58.798933 27.4816 34.133333 0 55.466667-17.0666667 64-51.2-12.8 17.0666667-27.733333 23.4666667-44.8 19.2-9.737481-2.4343704-16.697363-9.4985481-24.401067-17.3184-12.549689-12.7383704-27.07437-27.4816-58.798933-27.4816zm-64 76.8c-34.1333333 0-55.46666667 17.0666667-64 51.2 12.8-17.066667 27.7333333-23.466667 44.8-19.2 9.7374815 2.43437 16.697363 9.498548 24.4010667 17.3184 12.5496889 12.73837 27.0743703 27.4816 58.7989333 27.4816 34.133333 0 55.466667-17.066667 64-51.2-12.8 17.066667-27.733333 23.466667-44.8 19.2-9.737481-2.43437-16.697363-9.498548-24.401067-17.3184-12.549689-12.7383704-27.07437-27.4816-58.798933-27.4816z"
+                                fill="url(#a)" />
+                        </svg>
+                        <i class="fa-brands fa-square-js fa-beat-fade fa-lg" style="color: #63E6BE;"></i>
+                        <i class="fa-brands fa-react fa-xl fa-bounce" style="color: #63E6BE;"></i>
+                    </span>
+                    <a href="https://kh-password-generator.netlify.app/" id="extLinkAnchor" target="_blank"><img
+                            src="imageResources/ExternalLink1.png" alt="extLinkIcon" id="extLink"></a>
+            </div>
+            <div class="myPortfolioContainerMobilesImgLink">
+                <img src="./imageResources/passCodeBgImg.jpeg" alt="RandomPasswordGenerator">
+                
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="workMobiles">
+            <div class="myPortfolioContainerMobilesParaDiv">
+                <span class="numberingWorkMobiles"></span>
+                <h3>BG Color Changer using React</h3>
+                <span id="techStacks">
+                    <i class="fa-brands fa-html5 fa-beat-fade fa-lg"></i>
+                    <i class="fa-brands fa-css3 fa-beat-fade fa-lg"></i>
+                    <svg id="tailwindIcon" height="20" preserveAspectRatio="xMidYMid" viewBox="0 0 256 154" width="20"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <linearGradient id="a" x1="-2.777778%" x2="100%" y1="32%" y2="67.555556%">
+                            <stop offset="0" stop-color="#2298bd" />
+                            <stop offset="1" stop-color="#0ed7b5" />
+                        </linearGradient>
+                        <path
+                            d="m128 0c-34.1333333 0-55.4666667 17.0666667-64 51.2 12.8-17.0666667 27.7333333-23.4666667 44.8-19.2 9.737481 2.4343704 16.697363 9.4985481 24.401067 17.3184 12.549689 12.7383704 27.07437 27.4816 58.798933 27.4816 34.133333 0 55.466667-17.0666667 64-51.2-12.8 17.0666667-27.733333 23.4666667-44.8 19.2-9.737481-2.4343704-16.697363-9.4985481-24.401067-17.3184-12.549689-12.7383704-27.07437-27.4816-58.798933-27.4816zm-64 76.8c-34.1333333 0-55.46666667 17.0666667-64 51.2 12.8-17.066667 27.7333333-23.466667 44.8-19.2 9.7374815 2.43437 16.697363 9.498548 24.4010667 17.3184 12.5496889 12.73837 27.0743703 27.4816 58.7989333 27.4816 34.133333 0 55.466667-17.066667 64-51.2-12.8 17.066667-27.733333 23.466667-44.8 19.2-9.737481-2.43437-16.697363-9.498548-24.401067-17.3184-12.549689-12.7383704-27.07437-27.4816-58.798933-27.4816z"
+                            fill="url(#a)" />
+                    </svg>
+                    <i class="fa-brands fa-square-js fa-beat-fade fa-lg" style="color: #63E6BE;"></i>
+                    <i class="fa-brands fa-react fa-xl fa-bounce" style="color: #63E6BE;"></i>
+                </span>
+                <a href="https://kh-bg-changer.netlify.app/" id="extLinkAnchor" target="_blank"><img
+                        src="imageResources/ExternalLink1.png" alt="extLinkIcon" id="extLink"></a>
+            </div>
+            <div class="myPortfolioContainerMobilesImgLink">
+                <img src="./imageResources/bgChangerReact.jpeg" alt="BGcolorChangerReact">
+        
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="workMobiles">
+            <div class="myPortfolioContainerMobilesParaDiv">
+                <span class="numberingWorkMobiles"></span>
+                <h3>Guess The Number Game</h3>
+                <span id="techStacks">
+                    <i class="fa-brands fa-html5 fa-beat-fade fa-lg"></i>
+                    <i class="fa-brands fa-css3 fa-beat-fade fa-lg"></i>
+                    <i class="fa-brands fa-square-js fa-beat-fade fa-lg" style="color: #63E6BE;"></i>
+                </span>
+                <a href="https://kharsh560.github.io/GuessTheNumberBy_KumarHarsh/" id="extLinkAnchor" target="_blank"><img
+                        src="imageResources/ExternalLink1.png" alt="extLinkIcon" id="extLink"></a>
+            </div>
+            <div class="myPortfolioContainerMobilesImgLink">
+                <img src="imageResources/GuessTheNumberPoster.avif" alt="GuessTheNumberGame">
+            </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="workMobiles">
+            <div class="myPortfolioContainerMobilesParaDiv">
+                <span class="numberingWorkMobiles"></span>
+                <h3>Dhun music App ~ Feel the music</h3>
+                <span id="techStacks">
+                    <i class="fa-brands fa-html5 fa-beat-fade fa-lg"></i>
+                    <i class="fa-brands fa-css3 fa-beat-fade fa-lg"></i>
+                    <i class="fa-brands fa-square-js fa-beat-fade fa-lg" style="color: #63E6BE;"></i>
+                </span>
+                <a href="https://kharsh560.github.io/dhun_Feel_the_Music_BY_Kumar_Harsh/" id="extLinkAnchor" target="_blank"><img
+                        src="imageResources/ExternalLink1.png" alt="extLinkIcon" id="extLink"></a>
+            </div>
+            <div class="myPortfolioContainerMobilesImgLink">
+                <img src="imageResources/dhunBrandPic.png" alt="dhunMusicStreamingWebApp" id="dhun">
+            </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="workMobiles">
+            <div class="myPortfolioContainerMobilesParaDiv">
+                <span class="numberingWorkMobiles"></span>
+                <h3>The Drum Kit</h3>
+                <span id="techStacks">
+                    <i class="fa-brands fa-html5 fa-beat-fade fa-lg"></i>
+                    <i class="fa-brands fa-css3 fa-beat-fade fa-lg"></i>
+                    <i class="fa-brands fa-square-js fa-beat-fade fa-lg" style="color: #63E6BE;"></i>
+                </span>
+                <a href="https://kharsh560.github.io/Drumkit_by_kumar_harsh.github.io/" id="extLinkAnchor" target="_blank"><img
+                        src="imageResources/ExternalLink1.png" alt="extLinkIcon" id="extLink"></a>
+            </div>
+            <div class="myPortfolioContainerMobilesImgLink">
+                <img src="imageResources/DrumKitPoster.jpeg" alt="DrumKitGame">
+            </div>
+        </div>
+
+        <!-- 6 -->
+
+        <div class="workMobiles">
+            <div class="myPortfolioContainerMobilesParaDiv">
+                <span class="numberingWorkMobiles"></span>
+                <h3>The Bmi Calculator</h3>
+                <span id="techStacks">
+                    <i class="fa-brands fa-html5 fa-beat-fade fa-lg"></i>
+                    <i class="fa-brands fa-css3 fa-beat-fade fa-lg"></i>
+                    <i class="fa-brands fa-square-js fa-beat-fade fa-lg" style="color: #63E6BE;"></i>
+                </span>
+                <a href="https://kharsh560.github.io/BMI_calculator_BY_Kumar_Harsh/" id="extLinkAnchor" target="_blank"><img
+                        src="imageResources/ExternalLink1.png" alt="extLinkIcon" id="extLink"></a>
+            </div>
+            <div class="myPortfolioContainerMobilesImgLink">
+                <img src="imageResources/BMIposter2.webp" alt="BMIcalculator">
+            </div>
+        </div>
+
+        <!-- 7 -->
+
+        <div class="workMobiles">
+            <div class="myPortfolioContainerMobilesParaDiv">
+                <span class="numberingWorkMobiles"></span>
+                <h3>The Dice Game</h3>
+                <span id="techStacks">
+                    <i class="fa-brands fa-html5 fa-beat-fade fa-lg"></i>
+                    <i class="fa-brands fa-css3 fa-beat-fade fa-lg"></i>
+                    <i class="fa-brands fa-square-js fa-beat-fade fa-lg" style="color: #63E6BE;"></i>
+                </span>
+                <a href="https://kharsh560.github.io/dicee_game_by_kumar_harsh/" id="extLinkAnchor" target="_blank"><img
+                        src="imageResources/ExternalLink1.png" alt="extLinkIcon" id="extLink"></a>
+            </div>
+            <div class="myPortfolioContainerMobilesImgLink">
+                <img src="imageResources/DiceGamePoster.jpeg" alt="DiceGame" class=" DiceGame">
+            </div>
+        </div>
+
+        <!-- 8 -->
+
+        <div class="workMobiles">
+            <div class="myPortfolioContainerMobilesParaDiv">
+                <span class="numberingWorkMobiles"></span>
+                <h3>The background Color Changer</h3>
+                <span id="techStacks">
+                    <i class="fa-brands fa-html5 fa-beat-fade fa-lg"></i>
+                    <i class="fa-brands fa-css3 fa-beat-fade fa-lg"></i>
+                    <i class="fa-brands fa-square-js fa-beat-fade fa-lg" style="color: #63E6BE;"></i>
+                </span>
+                <a href="https://kharsh560.github.io/Color_ChangerAPP_BY_Kumar_Harsh/" id="extLinkAnchor" target="_blank"><img
+                        src="imageResources/ExternalLink1.png" alt="extLinkIcon" id="extLink"></a>
+            </div>
+            <div class="myPortfolioContainerMobilesImgLink">
+                <img src="imageResources/BackGroundColorChangerPoster.jpeg" alt="BackGroundColorChanger"
+                    class=" BackGroundColorChanger">
+            </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="workMobiles">
+            <div class="myPortfolioContainerMobilesParaDiv">
+                <span class="numberingWorkMobiles"></span>
+                <h3>The Clock</h3>
+                <span id="techStacks">
+                    <i class="fa-brands fa-html5 fa-beat-fade fa-lg"></i>
+                    <i class="fa-brands fa-css3 fa-beat-fade fa-lg"></i>
+                    <i class="fa-brands fa-square-js fa-beat-fade fa-lg" style="color: #63E6BE;"></i>
+                </span>
+                <a href="https://kharsh560.github.io/Digital_Clock_BY_Kumar_Harsh/" id="extLinkAnchor" target="_blank"><img
+                        src="imageResources/ExternalLink1.png" alt="extLinkIcon" id="extLink"></a>
+            </div>
+            <div class="myPortfolioContainerMobilesImgLink">
+                <img src="imageResources/TimePoster.gif" alt="currentTime" class="currentTime">
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+
     <!--  ########################################################## Portfolio section ends  ########################################################## -->
+
+
     <!--  ########################################################## Blog section begins  ########################################################## -->
 
     <div id="blogTopic">
@@ -642,6 +876,8 @@
 
 
     </div>
+
+    <hr>
 
     <!-- ############################################# Contact #############################################-->
 
