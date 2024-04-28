@@ -157,7 +157,8 @@ slider.oninput = function () {
 
 // &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& Code to handel the Forward button clicks &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 
-document.getElementById("sliderButtonsFwd").addEventListener("click", () => {
+document.getElementById("sliderButtonsFwd").addEventListener("click", (e) => {
+  e.preventDefault();
   if (slider.value < predefinedValues.length) {
     slider.value++;
   }
@@ -184,7 +185,8 @@ document.getElementById("sliderButtonsFwd").addEventListener("click", () => {
 
 // &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& Code to handel the Backward button clicks &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 
-document.getElementById("sliderButtonBk").addEventListener("click", () => {
+document.getElementById("sliderButtonBk").addEventListener("click", (e) => {
+  e.preventDefault();
   if (slider.value >= 0) {
     slider.value--;
   }
