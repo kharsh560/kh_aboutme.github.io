@@ -169,6 +169,7 @@ hr:after {
     padding-bottom: 15px;
 }
 
+
 .myDp {
     object-fit: cover;
     height: 300px;
@@ -409,6 +410,7 @@ hr:after {
     position: relative;
     left: 190px;
     padding: 10px;
+    text-align: center;
 
 }
 
