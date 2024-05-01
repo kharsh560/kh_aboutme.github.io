@@ -708,7 +708,7 @@ hr:after {
         flex-direction: column;
         align-items: center;
         margin-bottom: 25px;
-        padding-bottom: 20px;
+        padding-bottom: 25px;
     }
     #aboutMeContainerWriteup {
         display: flex;
