@@ -74,6 +74,67 @@ p {
     width: 100%;
 }
 
+
+/* NOTE: Code for slide in from left and right on page load */
+
+.introLeftPortion,
+.introRightPortion {
+    /* Start invisible */
+    transform: translateX(100%);
+    /* Start out of view */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.introLeftPortion {
+    transform: translateX(-200%);
+    /* Slide in from left */
+}
+
+.introRightPortion {
+    transform: translateX(200%);
+    /* Slide in from right */
+}
+
+.introLeftPortion.visible,
+.introRightPortion.visible {
+    /* Fade in */
+    transform: translateX(0);
+    /* Reset to original position */
+}
+
+/* ######################### */
+
+/* NOTE: Animation for shaking:- */
+
+.shake {
+    animation: shake 1.6s ease-in-out 1;
+    /* Shake for 1.6s seconds (2 times) */
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(10px);
+    }
+}
+/* ######################### */
+
 #intro {
     display: flex;
     justify-content: center;
@@ -91,6 +152,8 @@ p {
     font-weight: bolder;
     letter-spacing: 2px;
     line-height: 1.3;
+    display: flex;
+    flex-direction: column;
 }
 
 #GreetingsForMobiles {
@@ -114,6 +177,7 @@ p {
 }
 
 /* #####################################################################  About me portion ##################################################################### */
+
 
 #aboutMeContainer {
     display: flex;
@@ -602,11 +666,12 @@ hr:after {
     }
     body {
         overflow-x: hidden;
-        position: relative;
-        left: 10px;
+        /* position: relative;
+        left: 10px; */
     }
 
     #header {
+        margin-top: 10px;
         width: 100vw;
         display: flex;
         justify-content: space-between;
@@ -625,9 +690,17 @@ hr:after {
         position: relative;
         right: 15px;
         width: 60%; */
-        width: 100px;
+        position: absolute;
+        /* left: 0; */
+        right: 0;
+        /* bottom: 100%; */
+        width: 120px;
         display: flex;
         flex-direction: column;
+        z-index: 9;
+        opacity: 0.8;
+        transition: all 0.3s;
+
     }
 
     .navItems a {
@@ -638,8 +711,10 @@ hr:after {
 
     .fa-xmark {
         position: fixed;
-        top: 22px;
-        right: 16px;
+        top: 15px;
+        right: 20px;
+        z-index: 10;
+
     }
 
     .fa-xmark:hover {
