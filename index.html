@@ -8,7 +8,7 @@
     <!-- Viewport Meta Tag: Ensure that you have the viewport meta tag set correctly in the <head> section
          of your HTML document. This tag helps browsers understand how to scale and display the content on
          mobile devices.  -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
 
     <!-- Code to attach CSS styling -->
     <link rel="stylesheet" href="styling_for_KH_website.css">
@@ -1178,5 +1178,25 @@
 </body>
 <!-- <script src="KH_aboutMeFunctioning.js"></script> -->
 <!-- See in the head section (updated on: 25/12/24) -->
+<script>
+    window.addEventListener("load", function () {
+        const leftDiv = document.getElementById("leftDiv");
+        const rightDiv = document.getElementById("rightDiv");
+        const shakeForLaptops = document.getElementById("GreetingsForLaptop");
+        const shakeForMobiles = document.getElementById("GreetingsForMobiles");
+
+        // Trigger animations after a short delay
+        setTimeout(() => {
+            leftDiv.classList.add("visible");
+            rightDiv.classList.add("visible");
+
+            // Add shake animation after slide-in is complete
+            setTimeout(() => {
+                shakeForLaptops.classList.add("shake");
+                shakeForMobiles.classList.add("shake");
+            }, 900);
+        }, 10); // 300ms delay before animation starts
+    });
+</script>
 
 </html>

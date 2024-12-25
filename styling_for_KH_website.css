@@ -767,10 +767,10 @@ hr:after {
 
 @media only screen and (max-width: 600px) {
 
-    html {
+    /* html {
         position: relative;
         left: 10px;
-    }
+    } */
 
     /* ######################################## Header section for mobiles ########################################*/
     .show {
