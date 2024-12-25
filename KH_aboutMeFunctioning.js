@@ -125,6 +125,7 @@ const predefinedValues = [
   "15th March 2024",
   "22nd April 2024",
   "25th April 2024",
+  "25th December 2024",
 ];
 const slider = document.getElementById("customSlider");
 const display = document.getElementById("sliderValue");
@@ -229,5 +230,5 @@ window.addEventListener("load", function () {
       shakeForLaptops.classList.add("shake");
       shakeForMobiles.classList.add("shake");
     }, 900);
-  }, 500); // 300ms delay before animation starts
+  }, 10); // 300ms delay before animation starts
 });

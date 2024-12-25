@@ -19,7 +19,7 @@ p {
 }
 
 
-/* #####################################################################  Header portion ##################################################################### */
+/* #####################################################################  Header portion for laptops ##################################################################### */
 
 #header {
     width: 100%;
@@ -176,7 +176,7 @@ p {
     bottom: 30px; */
 }
 
-/* #####################################################################  About me portion ##################################################################### */
+/* #####################################################################  About me portion for laptops ##################################################################### */
 
 
 #aboutMeContainer {
@@ -294,7 +294,7 @@ hr:after {
     position: relative;
 }
 
-#skills {
+#experience {
     color: red;
 }
 
@@ -322,13 +322,25 @@ hr:after {
 }
 
 .aboutMeInfoTopic {
-    color: red;
+    color: grey;
     margin-top: 10px;
+}
+
+.aboutMeExperience p {
+    font-size: large;
+    
+}
+
+.aboutMeInfoTopic p {
+    font-size: x-large;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    
 }
 
 
 
-/* #####################################################################  Portfolio portion ##################################################################### */
+/* #####################################################################  Portfolio portion for laptops ##################################################################### */
 #myWork {
     font-family: 'Libre Baskerville', serif;
     display: flex;
@@ -459,14 +471,115 @@ hr:after {
     opacity: 1;
 }
 
-/* #####################################################################  Blog portion ##################################################################### */
+/* #####################################################################  Blog portion for laptops ##################################################################### */
+
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^ Code for UIverse css for flipping card ^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+/* From Uiverse.io by joe-watson-sbf */
+#flipCardContainer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.flip-card {
+    background-color: transparent;
+    width: 500px;
+    height: 270px;
+    perspective: 1000px;
+    font-family: sans-serif;
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.subTitle {
+    display: flex;
+    justify-content: center;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid coral;
+    border-radius: 1rem;
+}
+
+.flip-card-front {
+    background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%,
+            rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
+    color: coral;
+}
+
+.flip-card-back {
+    background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%,
+            bisque 40%, rgb(255, 185, 160) 78%);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back .subTitle {
+    padding: 10px;
+    text-align: center;
+}
+
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^ Code for UIverse css for flipping card ^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+.e-card {
+    display: none;
+}
+
 #blogTopic {
+    display: none;
+    /* NOTE: I'm using a component from UIvsers in case of laptops. */
+    align-items: center;
+    /* justify-content: space-between; */
+    margin-top: 30px;
+    /* display: ; */
+}
+
+.blogHeading {
+    height: 220px;
+    width: 110px;
+    border-top-right-radius: 110px;
+    border-bottom-right-radius: 110px;
+    /* background-color: red;
+    opacity: 0.6; */
+    background: rgba(245, 5, 5, 0.4);
     display: flex;
     align-items: center;
-    margin-top: 30px;
+    font-family: 'Libre Baskerville', serif;
+    flex-shrink: 0;
 }
 
 .blogIntro {
+    /* position: absolute; */
+    /* left: 50%; */
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -488,20 +601,9 @@ hr:after {
     width: 90%;
 } */
 
-.blogHeading {
-    height: 220px;
-    width: 110px;
-    border-top-right-radius: 110px;
-    border-bottom-right-radius: 110px;
-    /* background-color: red;
-    opacity: 0.6; */
-    background: rgba(245, 5, 5, 0.4);
-    display: flex;
-    align-items: center;
-    font-family: 'Libre Baskerville', serif;
-}
 
-/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Slider styling ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Slider styling  for laptops ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
 
 #sliderContainer {
     display: flex;
@@ -529,7 +631,7 @@ hr:after {
     appearance: none;
     height: 5px;
     border-radius: 5px;
-    background-color: rgb(241, 38, 45);
+    background-color: black;
     /* position: relative;
     top: 7px; */
     /* transition: value 2s; */
@@ -542,13 +644,13 @@ hr:after {
     margin: 10px;
     padding: 10px;
     width: 60%;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.05), red);
+    background: linear-gradient(to right, #eb3349, #f45c43);
     border-radius: 20px;
     box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1), -5px -5px 5px black;
 }
 
 .sliderButtons {
-    background-color: rgb(255, 115, 0);
+    background-color: linear-gradient(to right, #1f1c2c, #928dab);
     opacity: 0.6;
     border-radius: 8px;
     font-weight: bolder;
@@ -569,7 +671,7 @@ hr:after {
 }
 
 .paraDiv {
-    background: rgba(165, 42, 42, 0.5);
+    background: linear-gradient(to right, #ed213a, #93291e);
     border-radius: 20px;
     width: 70%;
     margin-bottom: 20px;
@@ -577,17 +679,22 @@ hr:after {
 }
 
 #lastUpdated {
-    opacity: 0.4;
+    opacity: 0.6;
     position: relative;
     top: -10px;
     left: 10px;
 }
 
 .contentInPara {
-    padding: 30px;
+    padding: 20px;
     margin: 10px;
-    letter-spacing: 1px;
-    line-height: 1.2;
+    letter-spacing: 2px;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.contentInPara a {
+    color: aquamarine;
 }
 
 #ulOfFrontendContent {
@@ -597,7 +704,7 @@ hr:after {
     left: 20px;
 }
 
-/* ######################################################### Contact portion ######################################################### */
+/* ######################################################### Contact portion for laptops ######################################################### */
 #contactMeMainContainer {
     display: flex;
     flex-direction: column;
@@ -656,11 +763,16 @@ hr:after {
 }
 
 
-/* ######################################################### css for mobiles ######################################################### */
+/* ######################################################### css for mobiles ######################################################### ######################################################### ######################################################### */
 
 @media only screen and (max-width: 600px) {
 
-    /* ######################################## Header section ########################################*/
+    html {
+        position: relative;
+        left: 10px;
+    }
+
+    /* ######################################## Header section for mobiles ########################################*/
     .show {
         display: block !important;
     }
@@ -730,7 +842,7 @@ hr:after {
         transform: scale(1.3);
     }
 
-    /* ######################################## My Intro Section ######################################## */
+    /* ######################################## My Intro Section for mobiles ######################################## */
     .myPoster {
         display: none;
     }
@@ -783,7 +895,7 @@ hr:after {
         border-radius: 40px;
     } */
 
-    /* ######################################## About Me Section ######################################## */
+    /* ######################################## About Me Section for mobiles ######################################## */
     #aboutMeContainer {
         display: inline;
     }
@@ -816,8 +928,8 @@ hr:after {
     }
 
     .aboutMeDetails {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
         width: 95%;
     }
 
@@ -826,7 +938,7 @@ hr:after {
         text-align: center;
     }
 
-    /* ######################################## Portfolio Section ######################################## */
+    /* ######################################## Portfolio Section for mobiles ######################################## */
 
     .myPortfolioContainerLaptops {
         /* display: grid;
@@ -843,7 +955,7 @@ hr:after {
         display: flex;
         padding: 10px;
         justify-content: center;
-        background-color: rgba(128, 0, 0, 0.4);
+        /* background-color: linear-gradient(to right, #8e0e00, #1f1c18); */
         border-radius: 40px;
         margin: 10px;
     }
@@ -929,13 +1041,115 @@ hr:after {
 
 
 
-    /* ######################################## Blog Section ######################################## */
+    /* ######################################## Blog Section for mobiles ######################################## */
     
     .blogMainContainer {
         width: 100vw;
     }
+
+    /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ CSS for the UIverse card ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+
+        /* From Uiverse.io by MikeAndrewDesigner */
+        .e-card {
+            display: block;
+            margin: 20px auto;
+            background: transparent;
+            box-shadow: 0px 8px 28px -9px rgba(0, 0, 0, 0.45);
+            position: relative;
+            width: 340px;
+            height: 250px;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+    
+        .wave {
+            position: absolute;
+            width: 540px;
+            height: 700px;
+            opacity: 0.6;
+            left: 0;
+            top: 0;
+            margin-left: -50%;
+            margin-top: -70%;
+            background: linear-gradient(744deg, #af40ff, #5b42f3 60%, #00ddeb);
+        }
+    
+        .icon {
+            width: 3em;
+            margin-top: -1em;
+            padding-bottom: 1em;
+        }
+    
+        .infotop {
+            text-align: center;
+            font-size: 20px;
+            position: absolute;
+            top: 5.6em;
+            left: 0;
+            right: 0;
+            color: rgb(255, 255, 255);
+            font-weight: 600;
+        }
+    
+        .name {
+            font-size: 14px;
+            font-weight: 100;
+            position: relative;
+            top: 1em;
+            text-transform: lowercase;
+        }
+    
+        .wave:nth-child(2),
+        .wave:nth-child(3) {
+            top: 210px;
+        }
+    
+        .playing .wave {
+            border-radius: 40%;
+            animation: wave 3000ms infinite linear;
+        }
+    
+        .wave {
+            border-radius: 40%;
+            animation: wave 55s infinite linear;
+        }
+    
+        .playing .wave:nth-child(2) {
+            animation-duration: 4000ms;
+        }
+    
+        .wave:nth-child(2) {
+            animation-duration: 50s;
+        }
+    
+        .playing .wave:nth-child(3) {
+            animation-duration: 5000ms;
+        }
+    
+        .wave:nth-child(3) {
+            animation-duration: 45s;
+        }
+    
+        @keyframes wave {
+            0% {
+                transform: rotate(0deg);
+            }
+    
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    
+
+    /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ CSS for the UIverse card ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+    
+
+    #flipCardContainer {
+        display: none;
+    }
+    
     #blogTopic {
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -958,7 +1172,7 @@ hr:after {
         /* margin-left: 80px; */
     }
 
-    /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Slider styling ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+    /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Slider styling for mobiles ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
 
     #sliderButtonsContainer {
         width: 90%;
@@ -988,7 +1202,7 @@ hr:after {
         left: 0;
     }
 
-    /* ######################################## Contact Section ######################################## */
+    /* ######################################## Contact Section for mobiles ######################################## */
 
 
     .requestToFollow {

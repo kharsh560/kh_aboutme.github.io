@@ -31,6 +31,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Josefin+Sans:wght@300&family=Libre+Baskerville&family=Merriweather&family=Montserrat+Subrayada&family=Montserrat:wght@500&family=Qwitcher+Grypen:wght@700&family=Sacramento&family=Ubuntu&family=Varela+Round&display=swap"
         rel="stylesheet">
+    <!-- NOTE: A problem which led to this setup of putting the script here in head section along with "defer" -->
+    <!-- See, I want the JS to load before the HTML so can I put this line (<script src="KH_aboutMeFunctioning.js"></script>) before body.
+    Actually what's happening, as this project is hosted through github pages, a particular JS feature which should load instantaneously, 
+    gets loaded in the very end after the "loading" sign on the tab goes off. -->
+    <!-- The defer attribute tells the browser to download the script in the background and only execute it after the HTML document is fully parsed, ensuring that the script doesn't block the HTML rendering. -->
+    <!-- Best Use Case: When your script manipulates the DOM or depends on the DOM being fully loaded. -->
+    <!-- And, I think its working, let me push the code and then see! -->
+    <script src="KH_aboutMeFunctioning.js" defer></script>
+    
 </head>
 
 <body>
@@ -52,19 +61,19 @@
     <!--  ########################################################## Second layer, having Intro  ########################################################## -->
     <div id="intro">
         <div class="aboutMeWriteup introLeftPortion" id="leftDiv" >
-            <!-- NOTE: for Laptops => This greeting and the below one paragraph -->
+            <!-- NOTE: for Laptops <i class="fa-regular fa-snowflake"></i> This greeting and the below one paragraph -->
             <h1 id="GreetingsForLaptop" >Greetings!
                 <br>
                 <span class="myName">I'm KUMAR HARSH</span>
                 <br>
                 a Software Developer
             </h1>
-            <!-- NOTE: for mobiles => Only greetings  -->
+            <!-- NOTE: for mobiles <i class="fa-regular fa-snowflake"></i> Only greetings  -->
             <h1 id="GreetingsForMobiles">
                 Greetings! <span class="myName">I'm <br> KUMAR HARSH</span> <br> a Software Developer
             </h1>
 
-            <!-- NOTE: for Laptops => This paragraph and the above greetings -->
+            <!-- NOTE: for Laptops <i class="fa-regular fa-snowflake"></i> This paragraph and the above greetings -->
             <p class="p1">I am currently a third year undergraduate student at Maharaja Agrasen Institute of Technology (MAIT), Delhi, pursuing a Bachelor of
                 Technology in Computer Science and Engineering with a specialization in Artificial Intelligence and Machine
                 Learning. <br> <br> My passion lies in the field of coding, where I spend a significant part of my time
@@ -92,14 +101,14 @@
                     <h1>About Me</h1>
                     <div>
                         My resume :- <a target="_blank"
-                            href="https://drive.google.com/file/d/1eM1-zTbRjMr9jfZOt60GCY3VcKTymN_Z/view?usp=sharing"><i
+                            href="https://drive.google.com/file/d/1HooF4SqmK84edZMNINWApt8F5b_elDXp/view?usp=sharing"><i
                                 class="fa-solid fa-file fa-lg" style="color: #f04c64;"></i></a>
                     </div>
                     <p>I am Kumar Harsh, an individual deeply passionate about coding and its various facets. <br>
                         My primary objectives within the four years of my B.Tech journey, will revolve around acquiring
                         proficiency in four key areas:<br> <br>
                         1. Data Structures and Algorithms <br>
-                        2. Full Stack Web Development (MERN stack) <br>
+                        2. Full Stack Web Development (MERN stack + NEXT) <br>
                         3. Data Science:- thus exploring AI & ML! <br>
                         4. Exploring BlockChain & Web3 <br> <br>
                     </p>
@@ -112,11 +121,80 @@
         <div class="aboutMeDetails ">
             <h3>A comprehensive overview of my accomplishments thus far encompasses:</h3>
             <div class="aboutMeTabs">
-                <p id="skills">Skills</p>
                 <p id="experience">Experience</p>
+                <p id="skills">Skills</p>
                 <p id="education">Education</p>
             </div>
-            <div class="aboutMeSkills">
+
+            <div class="aboutMeExperience">
+                <!-- 4 -->
+
+                <div class="aboutMeInfoTopic">
+                    <p>Full Stack Developer & LLM Engineer Intern</p>
+                </div>
+                <div>
+                    <p>
+                        <i class="fa-regular fa-snowflake"></i> at Stealth Start-up | [August 2024 -> Present] <br>
+                        <i class="fa-regular fa-snowflake"></i> Kubernetes Deployment and Service Orchestration : Deployed and managed containerized services using Kubernetes on
+                        Docker, optimizing ingress gateways, resource allocation, and service connections. Automated deployments with Helm and
+                        resolved pod-related issues for reliable microservice communication. <br>
+                        <i class="fa-regular fa-snowflake"></i> Spearheaded the development of a responsive, user-centric full-stack webapp using Next.js translating business
+                        requirements into a seamless end-to-end solution by streamlining the entire development pipeline juggling between
+                        frontend and backend. <br>
+                        <i class="fa-regular fa-snowflake"></i> Training LLMs using prompt engineering, enabling the start-up to deploy AI-driven automation features that’ll enhance
+                        its core product offering and differentiate it in the market by integrating LLM-based solutions into customer-facing
+                        products. <br>
+                    </p>
+                </div>
+
+                <div class="aboutMeInfoTopic">
+                    <p>Technical Executive at CSI-IW</p>
+                </div>
+                <div>
+                    <p>
+                    <i class="fa-regular fa-snowflake"></i> [July 2024 -> Present] <br>
+                    <i class="fa-regular fa-snowflake"></i> Active Member of the Technical Team as a technical executive at CSI-INNOWAVE. <br>
+                    <i class="fa-regular fa-snowflake"></i> Its one of the oldest and most prestigious societies at Maharaja Agrasen Institute of Technology, Delhi, started in the year 2009. <br>
+                    <i class="fa-regular fa-snowflake"></i> Coordinated with my team to organize & execute our society's flagship technical & entertainment fest, Zypher,
+                    successfully ensuring and managing a footfall of over 1000 attendees. (September 2024)
+                    </p>
+                </div>
+
+                <!-- 4 -->
+                <div class="aboutMeInfoTopic">
+                    <p>Selected amongst #Top10 teams in NIT Patna's PitchTemberFest.</p>
+                </div>
+                <div>
+                    <p>
+                        <i class="fa-regular fa-snowflake"></i> My team managed to secure a position under top 10 teams in NIT Patna's PitchTemberFest
+                        where in we had worked on our platform SyncSphere.
+                    </p>
+                </div>
+        
+                <!-- 5 -->
+                <div class="aboutMeInfoTopic">
+                    <p>Our solution got accepted in Google Solution Challenge under GDSC.</p>
+                </div>
+                <div>
+                    <p>
+                        <i class="fa-regular fa-snowflake"></i> In the Google Solution Challenge, we elevated our project by integrating Google products like Gemini, enabling
+                        personalized responses for tax benefits based on income. We also received recognition by being shortlisted for the GDSC India regional Bootcamp, where we received personalized
+                        mentorship from Google Developers. <br> <br>
+
+                        <i class="fa-regular fa-snowflake"></i> You can see this post of mine on <a class="GDSCpost" href="https://www.linkedin.com/posts/kumar-harsh-468a22253_top10-top100-syncsphere-activity-7185929396371816451-Nwh-?utm_source=share&utm_medium=member_desktop">Linkedin</a> for more info related to these events.
+                    </p>
+                </div>
+                <!-- 6 -->
+                <div class="aboutMeInfoTopic">
+                    <p>Have worked on quite a few Projects.</p>
+                </div>
+                <div>
+                    <p>I have worked upon some of the very fundamental projects as a part of <br> 
+                        learning Web Development, at which you can have a look on, in the "My Work" section.</p>
+                </div>
+            </div>
+
+            <div class="aboutMeSkills inactiveTab">
                 <!-- 1 -->
                 <div class="aboutMeInfoTopic">
                     <p>Programming In C/C++</p>
@@ -131,68 +209,15 @@
                 <div>
                     <p>Learning Fullstack Web Development and currently in frontend portion of it doing
                         React.Js after learning HTML, CSS and JS! Also have worked upon the backend portion!
-                    See the blog section to know more. </p>
+                        See the blog section to know more. </p>
                 </div>
                 <!-- 3 -->
                 <div class="aboutMeInfoTopic">
                     <p>Data Science</p>
                 </div>
                 <div>
-                    <p>Currently, I am learning Data Science to understand how AI and ML can be  leveraged to drive business and strategic decisions.</p>
-                </div>
-            </div>
-
-            <div class="aboutMeExperience inactiveTab">
-                <!-- 4 -->
-                <div class="aboutMeInfoTopic">
-                    <p>Technical Executive at CSI-IW</p>
-                </div>
-                <div>
-                    <p>
-                    => Active Member of the Technical Team as a technical executive at CSI-INNOWAVE. <br>
-                    => Its one of the oldest and most prestigious societies at Maharaja Agrasen Institute of Technology, Delhi, started in the year 2009.
-                    </p>
-                </div>
-
-                <!-- 4 -->
-                <div class="aboutMeInfoTopic">
-                    <p>Selected amongst #Top10 teams in NIT Patna's PitchTemberFest.</p>
-                </div>
-                <div>
-                    <p>
-                        => My team managed to secure a position under top 10 teams in NIT Patna's PitchTemberFest
-                        where in we had worked on our platform SyncSphere.
-                    </p>
-                </div>
-        
-                <!-- 5 -->
-                <div class="aboutMeInfoTopic">
-                    <p>Our solution got accepted in Google Solution Challenge under GDSC.</p>
-                </div>
-                <div>
-                    <p>
-                        => In the Google Solution Challenge, we elevated our project by integrating Google products like Gemini, enabling
-                        personalized responses for tax benefits based on income. We also received recognition by being shortlisted for the GDSC India regional Bootcamp, where we received personalized
-                        mentorship from Google Developers. <br> <br>
-
-                        => You can see this post of mine on <a class="GDSCpost" href="https://www.linkedin.com/posts/kumar-harsh-468a22253_top10-top100-syncsphere-activity-7185929396371816451-Nwh-?utm_source=share&utm_medium=member_desktop">Linkedin</a> for more info related to these events.
-                    </p>
-                </div>
-                <!-- <div class="aboutMeInfoTopic">
-                    <p>Working on ERP project of MAIT, Delhi <br>
-                    </p>
-                </div>
-                <div>
-                    <p>=> I am a member of the team, working on the ERP project of MAIT, Delhi. <br>
-                        => I am working in the frontend portion in React.js techstack!</p>
-                </div> -->
-                <!-- 6 -->
-                <div class="aboutMeInfoTopic">
-                    <p>Have worked on quite a few Projects.</p>
-                </div>
-                <div>
-                    <p>I have worked upon some of the very fundamental projects as a part of <br> 
-                        learning Web Development, at which you can have a look on, in the "My Work" section.</p>
+                    <p>Currently, I am learning Data Science to understand how AI and ML can be leveraged to drive business and
+                        strategic decisions.</p>
                 </div>
             </div>
 
@@ -479,7 +504,7 @@
         <!-- And it didn't work!! -->
 
         <!-- -1th -->
-        <div class="workMobiles">
+        <div class="workMobiles" style="background: linear-gradient(to right, #8e0e00, #1f1c18);">
             <div class="myPortfolioContainerMobilesParaDiv">
                 <span class="numberingWorkMobiles"></span>
                 <h3>To-Do list App</h3>
@@ -506,7 +531,7 @@
         </div>
 
         <!-- 0th -->
-        <div class="workMobiles">
+        <div class="workMobiles" style="background: linear-gradient(to right, #8e0e00, #1f1c18);">
             <div class="myPortfolioContainerMobilesParaDiv">
                 <span class="numberingWorkMobiles"></span>
                 <h3>Currency Convertor</h3>
@@ -538,7 +563,7 @@
         </div>
 
         <!-- 1 -->
-        <div class="workMobiles">
+        <div class="workMobiles" style="background: linear-gradient(to right, #8e0e00, #1f1c18);">
             <div class="myPortfolioContainerMobilesParaDiv">
                 <span class="numberingWorkMobiles"></span>
                 <h3>Random Password Generator</h3>
@@ -581,7 +606,7 @@
         </div>
 
         <!-- 2 -->
-        <div class="workMobiles">
+        <div class="workMobiles" style="background: linear-gradient(to right, #8e0e00, #1f1c18);">
             <div class="myPortfolioContainerMobilesParaDiv">
                 <span class="numberingWorkMobiles"></span>
                 <h3>BG Color Changer using React</h3>
@@ -613,7 +638,7 @@
         </div>
 
         <!-- 3 -->
-        <div class="workMobiles">
+        <div class="workMobiles" style="background: linear-gradient(to right, #8e0e00, #1f1c18);">
             <div class="myPortfolioContainerMobilesParaDiv">
                 <span class="numberingWorkMobiles"></span>
                 <h3>Guess The Number Game</h3>
@@ -633,7 +658,7 @@
         </div>
 
         <!-- 4 -->
-        <div class="workMobiles">
+        <div class="workMobiles" style="background: linear-gradient(to right, #8e0e00, #1f1c18);">
             <div class="myPortfolioContainerMobilesParaDiv">
                 <span class="numberingWorkMobiles"></span>
                 <h3>Dhun music App ~ Feel the music</h3>
@@ -653,7 +678,7 @@
         </div>
 
         <!-- 5 -->
-        <div class="workMobiles">
+        <div class="workMobiles" style="background: linear-gradient(to right, #8e0e00, #1f1c18);">
             <div class="myPortfolioContainerMobilesParaDiv">
                 <span class="numberingWorkMobiles"></span>
                 <h3>The Drum Kit</h3>
@@ -674,7 +699,7 @@
 
         <!-- 6 -->
 
-        <div class="workMobiles">
+        <div class="workMobiles" style="background: linear-gradient(to right, #8e0e00, #1f1c18);">
             <div class="myPortfolioContainerMobilesParaDiv">
                 <span class="numberingWorkMobiles"></span>
                 <h3>The Bmi Calculator</h3>
@@ -695,7 +720,7 @@
 
         <!-- 7 -->
 
-        <div class="workMobiles">
+        <div class="workMobiles" style="background: linear-gradient(to right, #8e0e00, #1f1c18);">
             <div class="myPortfolioContainerMobilesParaDiv">
                 <span class="numberingWorkMobiles"></span>
                 <h3>The Dice Game</h3>
@@ -716,7 +741,7 @@
 
         <!-- 8 -->
 
-        <div class="workMobiles">
+        <div class="workMobiles" style="background: linear-gradient(to right, #8e0e00, #1f1c18);">
             <div class="myPortfolioContainerMobilesParaDiv">
                 <span class="numberingWorkMobiles"></span>
                 <h3>The background Color Changer</h3>
@@ -737,7 +762,7 @@
         </div>
 
         <!-- 9 -->
-        <div class="workMobiles">
+        <div class="workMobiles" style="background: linear-gradient(to right, #8e0e00, #1f1c18);">
             <div class="myPortfolioContainerMobilesParaDiv">
                 <span class="numberingWorkMobiles"></span>
                 <h3>The Clock</h3>
@@ -765,7 +790,7 @@
 
     <!--  ########################################################## Blog section begins  ########################################################## -->
 
-    <div id="blogTopic">
+    <!-- <div id="blogTopic">
         <div class="blogHeading">
             <h1>BLOG</h1>
         </div>
@@ -774,6 +799,56 @@
                 progress in Data Structures and Algorithms (DSA), and my experiences in the field of AI & ML, and other
                 noteworthy achievements.
             </h4>
+        </div>
+    </div> -->
+
+    <div class="e-card playing">
+        <div class="image"></div>
+    
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    
+    
+        <div class="infotop">
+    
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="icon">
+                <path fill="currentColor" d="M19.4133 4.89862L14.5863 2.17544C12.9911 1.27485 11.0089 1.27485 9.41368 2.17544L4.58674
+      4.89862C2.99153 5.7992 2 7.47596 2 9.2763V14.7235C2 16.5238 2.99153 18.2014 4.58674 19.1012L9.41368
+      21.8252C10.2079 22.2734 11.105 22.5 12.0046 22.5C12.6952 22.5 13.3874 22.3657 14.0349 22.0954C14.2204
+      22.018 14.4059 21.9273 14.5872 21.8252L19.4141 19.1012C19.9765 18.7831 20.4655 18.3728 20.8651
+      17.8825C21.597 16.9894 22 15.8671 22 14.7243V9.27713C22 7.47678 21.0085 5.7992 19.4133 4.89862ZM4.10784
+      14.7235V9.2763C4.10784 8.20928 4.6955 7.21559 5.64066 6.68166L10.4676 3.95848C10.9398 3.69152 11.4701
+      3.55804 11.9996 3.55804C12.5291 3.55804 13.0594 3.69152 13.5324 3.95848L18.3593 6.68166C19.3045 7.21476
+      19.8922 8.20928 19.8922 9.2763V9.75997C19.1426 9.60836 18.377 9.53091 17.6022 9.53091C14.7929 9.53091
+      12.1041 10.5501 10.0309 12.3999C8.36735 13.8847 7.21142 15.8012 6.68783 17.9081L5.63981 17.3165C4.69466
+      16.7834 4.10699 15.7897 4.10699 14.7235H4.10784ZM10.4676 20.0413L8.60933 18.9924C8.94996 17.0479 9.94402
+      15.2665 11.4515 13.921C13.1353 12.4181 15.3198 11.5908 17.6022 11.5908C18.3804 11.5908 19.1477 11.6864
+      19.8922 11.8742V14.7235C19.8922 15.2278 19.7589 15.7254 19.5119 16.1662C18.7615 15.3596 17.6806 14.8528
+       16.4783 14.8528C14.2136 14.8528 12.3781 16.6466 12.3781 18.8598C12.3781 19.3937 12.4861 19.9021 12.68
+       20.3676C11.9347 20.5316 11.1396 20.4203 10.4684 20.0413H10.4676Z"></path>
+            </svg><br>
+            BLOG SECTION
+            <br>
+            <div class="name">Kharsh560</div>
+        </div>
+    </div>
+
+
+    <div id="flipCardContainer">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title">BLOG SECTION</p>
+                    <p class="subTitle">Hover Me</p>
+                </div>
+                <div class="flip-card-back">
+                    <p class="title">About Blog Section</p>
+                    <p class="subTitle">Here, I document my journey as a software developer, encompassing the projects I have undertaken in full
+                        stack web development, my progress in Data Structures and Algorithms (DSA), and my experiences in the
+                        field of AI & ML, and other noteworthy achievements.</p>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -785,7 +860,7 @@
             <!-- <i class="fa-solid fa-forward" style="color: #74C0FC;"></i> -->
             <button class="sliderButtons" id="sliderButtonBk"n>Previous</button>
             <!-- <i id="sliderButtonBk" class="fa-solid fa-backward" style="color: #FFD43B;"></i> -->
-            <input type="range" id="customSlider" min="0" max="6" value="0" step="1">
+            <input type="range" id="customSlider" min="0" max="7" value="7" step="1">
             <!-- <i id="sliderButtonsFwd" class="fa-solid fa-forward" style="color: #FFD43B;"></i> -->
             <button class="sliderButtons" id="sliderButtonsFwd">Next</button>
             <!-- <a href="#blogTopic">
@@ -803,7 +878,7 @@
 
     <div id="blogMainContainer">
         <!-- 1 -->
-        <div class="paraDiv">
+        <div class="paraDiv inactiveTab">
             <h4 id="lastUpdated">Last Updated :- 26th June 2023</h4>
             <p class="contentInPara">
                 During my first semester at college, I embarked on my journey into the world of coding. Initially, it
@@ -1024,6 +1099,53 @@
             </p>
         </div>
 
+        <!-- 8 -->
+        <div class="paraDiv">
+            <h4 id="lastUpdated">Last Updated :- 25th December 2024</h4>
+            <p class="contentInPara">
+                Hello people! Posting after a long time! <br>
+                You know, apart from this public building trend, I had been noticing the trend of flaunting one’s success stories too,
+                be it regarding internship or jobs. <br>
+                
+                So, here’s mine! I mean, why not if I have one? 😉 <br>
+                
+                I got my first internship, a paid one from a stealth startup based remotely!
+                It was 25th August, 2024 when the final catchup discussion meet took place and both parties agreed upon to work
+                together. <br>
+                
+                Didn't even realize, it’s been 4 months (September-December)! <br>
+                Indeed, as they say, time slips through, eluding our grasp! <br>
+                
+                How was it, Harsh? <br>
+                Well, lots of learning, lots of grinding, and tonnes of hard work was put in.  <br>
+                Any difficulties?  Hell yeah! Managing this internship, DSA, non-stop learning, my technical society’s tasks (not
+                everyday, but it is when it is), and last but not the least the college’s practicals, assignments, mid-sems, end-sems,
+                viva, and maintaining attendance has been like juggling multiple balls at once. <br>
+                
+                Now, also talking about the people behind the startup.  They are just amazing, fair, are having a great experience in
+                top MNCs and most importantly are calm (hard to get, am lucky in this part). <br>
+                
+                What am I working on? <br>
+                I’m working majorly in three domains, they are, full stack development (NEXT + MEN) , LLM prompt engineering (in order
+                to mould the model to do a task perfectly all by itself, essentially automating it), and lastly, some hidden tasks (ofc
+                can’t speak in public regarding this one 😅) <br>
+                
+                So! This was it, enough showcasing. <br>
+                Lastly, I want to add, just keep going on, everyone has their own trajectory, own speeds and own capabilities, but the
+                "result" is what matters. Keep learning, keep applying, keep failing, keep repeating! As you all know, it's majorly a
+                luck game for those who have done all the hard work. Hence, never stop.
+                Keeping your phones down and spend hours sitting and coding for your own benefit. Only this will work, nothing else. All
+                these regular partying, gathering, watching reels for hours won't help none! <br>
+                
+                Wishing you all good luck for your “The first story” and wish me one too as there’s a long journey to cover. <br>
+                
+                Lastly thanking @Hiteshdotcom @CodeWithHarry1 @Piyush_eon @lovebabbar3 @Luvk1412 ... for this!
+
+                <br>
+                Thankyou for reading the blog, Its Harsh signing off, hope to see you in my next blog!
+            </p>
+        </div>
+
 
     </div>
 
@@ -1054,6 +1176,7 @@
     </div>
 
 </body>
-<script src="KH_aboutMeFunctioning.js"></script>
+<!-- <script src="KH_aboutMeFunctioning.js"></script> -->
+<!-- See in the head section (updated on: 25/12/24) -->
 
 </html>
