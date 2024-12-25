@@ -214,21 +214,21 @@ document.getElementById("sliderButtonBk").addEventListener("click", (e) => {
 });
 
 // &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& Code for slide in transition animation:- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
-// window.addEventListener("load", function () {
-//   const leftDiv = document.getElementById("leftDiv");
-//   const rightDiv = document.getElementById("rightDiv");
-//   const shakeForLaptops = this.document.getElementById("GreetingsForLaptop");
-//   const shakeForMobiles = this.document.getElementById("GreetingsForMobiles");
+window.addEventListener("load", function () {
+  const leftDiv = document.getElementById("leftDiv");
+  const rightDiv = document.getElementById("rightDiv");
+  const shakeForLaptops = this.document.getElementById("GreetingsForLaptop");
+  const shakeForMobiles = this.document.getElementById("GreetingsForMobiles");
 
-//   // Trigger animations after a short delay
-//   setTimeout(() => {
-//     leftDiv.classList.add("visible");
-//     rightDiv.classList.add("visible");
+  // Trigger animations after a short delay
+  setTimeout(() => {
+    leftDiv.classList.add("visible");
+    rightDiv.classList.add("visible");
 
-//     // Add shake animation after slide-in is complete
-//     setTimeout(() => {
-//       shakeForLaptops.classList.add("shake");
-//       shakeForMobiles.classList.add("shake");
-//     }, 900);
-//   }, 10); // 300ms delay before animation starts
-// });
+    // Add shake animation after slide-in is complete
+    setTimeout(() => {
+      shakeForLaptops.classList.add("shake");
+      shakeForMobiles.classList.add("shake");
+    }, 900);
+  }, 10); // 300ms delay before animation starts
+});

@@ -75,34 +75,28 @@ p {
 }
 
 
-/* NOTE: Code for slide in from left and right on page load */
+/* Code for slide in from left and right on page load */
 
-.introLeftPortion,
+/* .introLeftPortion,
 .introRightPortion {
-    /* Start invisible */
     transform: translateX(100%);
-    /* Start out of view */
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .introLeftPortion {
     transform: translateX(-200%);
-    /* Slide in from left */
 }
 
 .introRightPortion {
     transform: translateX(200%);
-    /* Slide in from right */
 }
 
 .introLeftPortion.visible,
 .introRightPortion.visible {
-    /* Fade in */
     transform: translateX(0);
-    /* Reset to original position */
-}
+} */
 
-/* ######################### */
+/* ######################### Yeah, the late response of JS didn'g get solved #########################*/
 
 /* NOTE: Animation for shaking:- */
 
@@ -476,7 +470,7 @@ hr:after {
 /* ^^^^^^^^^^^^^^^^^^^^^^^^^ Code for UIverse css for flipping card ^^^^^^^^^^^^^^^^^^^^^^^^^*/
 
 /* From Uiverse.io by joe-watson-sbf */
-#flipCardContainer {
+.flipCardContainer {
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -554,13 +548,11 @@ hr:after {
     display: none;
 }
 
-#blogTopic {
+/* I'm using different cards. */
+/* #blogTopic {
     display: none;
-    /* NOTE: I'm using a component from UIvsers in case of laptops. */
     align-items: center;
-    /* justify-content: space-between; */
     margin-top: 30px;
-    /* display: ; */
 }
 
 .blogHeading {
@@ -568,8 +560,6 @@ hr:after {
     width: 110px;
     border-top-right-radius: 110px;
     border-bottom-right-radius: 110px;
-    /* background-color: red;
-    opacity: 0.6; */
     background: rgba(245, 5, 5, 0.4);
     display: flex;
     align-items: center;
@@ -578,8 +568,6 @@ hr:after {
 }
 
 .blogIntro {
-    /* position: absolute; */
-    /* left: 50%; */
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -595,13 +583,7 @@ hr:after {
     padding: 10px;
     text-align: center;
 
-}
-
-/* .blogIntro h4 {
-    width: 90%;
 } */
-
-
 
 /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Slider styling  for laptops ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
 
@@ -747,6 +729,7 @@ hr:after {
 
 .bottom_container {
     padding: 10px;
+    margin-top: 30px;
 }
 
 .footer-link {
@@ -767,10 +750,10 @@ hr:after {
 
 @media only screen and (max-width: 600px) {
 
-    /* html {
+    html {
         position: relative;
-        left: 10px;
-    } */
+        left: 8px;
+    }
 
     /* ######################################## Header section for mobiles ########################################*/
     .show {
@@ -778,8 +761,6 @@ hr:after {
     }
     body {
         overflow-x: hidden;
-        /* position: relative;
-        left: 10px; */
     }
 
     #header {
@@ -898,6 +879,8 @@ hr:after {
     /* ######################################## About Me Section for mobiles ######################################## */
     #aboutMeContainer {
         display: inline;
+        position: relative;
+        left: 5px;
     }
     #aboutMeContainerDpAndWriteup {
         width: 100%;
@@ -908,6 +891,10 @@ hr:after {
         align-items: center;
         margin-bottom: 25px;
         padding-bottom: 25px;
+        margin-left: 10px;
+        margin-right: 10px;
+        position: relative;
+        right: 5px;
     }
     #aboutMeContainerWriteup {
         display: flex;
@@ -1144,11 +1131,12 @@ hr:after {
     /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ CSS for the UIverse card ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
     
 
-    #flipCardContainer {
+    .flipCardContainer {
         display: none;
     }
     
-    #blogTopic {
+    /* I'm using different cards. */
+    /* #blogTopic {
         display: none;
         flex-direction: column;
         justify-content: center;
@@ -1162,15 +1150,12 @@ hr:after {
         border-bottom-left-radius: 0;
         border-top-right-radius: 110px;
         border-bottom-right-radius: 0;
-        /* background-color: red;
-        opacity: 0.6; */
         background: rgba(245, 5, 5, 0.4);
         display: flex;
         align-items: center;
         font-family: 'Libre Baskerville', serif;
         margin-bottom: 10px;
-        /* margin-left: 80px; */
-    }
+    } */
 
     /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Slider styling for mobiles ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
 
