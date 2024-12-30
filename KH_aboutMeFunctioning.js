@@ -1,90 +1,113 @@
 // Code for showing and hiding the skill, education and experience portion ##########################################################
 
-document.querySelector("#skills").addEventListener("click", () => {
-  document.querySelector(".aboutMeExperience").classList.add("inactiveTab");
-  document.querySelector(".aboutMeEducation").classList.add("inactiveTab");
-  document.querySelector(".aboutMeSkills").classList.remove("inactiveTab");
-  document.querySelector(".aboutMeSkills").classList.add("activeTab");
-  document.querySelector("#experience").style.color = "white";
-  document.querySelector("#education").style.color = "white";
-  document.querySelector("#skills").style.color = "red";
-});
-document.querySelector("#experience").addEventListener("click", () => {
-  document.querySelector(".aboutMeExperience").classList.remove("inactiveTab");
-  document.querySelector(".aboutMeExperience").classList.add("activeTab");
-  document.querySelector(".aboutMeEducation").classList.add("inactiveTab");
-  document.querySelector(".aboutMeSkills").classList.add("inactiveTab");
-  document.querySelector("#experience").style.color = "red";
-  document.querySelector("#education").style.color = "white";
-  document.querySelector("#skills").style.color = "white";
-});
-document.querySelector("#education").addEventListener("click", () => {
-  document.querySelector(".aboutMeEducation").classList.remove("inactiveTab");
-  document.querySelector(".aboutMeEducation").classList.add("activeTab");
-  document.querySelector(".aboutMeExperience").classList.add("inactiveTab");
-  document.querySelector(".aboutMeSkills").classList.add("inactiveTab");
-  document.querySelector("#experience").style.color = "white";
-  document.querySelector("#education").style.color = "red";
-  document.querySelector("#skills").style.color = "white";
-});
+// document.querySelector("#skills").addEventListener("click", () => {
+//   document.querySelector(".aboutMeExperience").classList.add("inactiveTab");
+//   document.querySelector(".aboutMeEducation").classList.add("inactiveTab");
+//   document.querySelector(".aboutMeSkills").classList.remove("inactiveTab");
+//   document.querySelector(".aboutMeSkills").classList.add("activeTab");
+//   document.querySelector("#experience").style.color = "white";
+//   document.querySelector("#education").style.color = "white";
+//   document.querySelector("#skills").style.color = "red";
+// });
+// document.querySelector("#experience").addEventListener("click", () => {
+//   document.querySelector(".aboutMeExperience").classList.remove("inactiveTab");
+//   document.querySelector(".aboutMeExperience").classList.add("activeTab");
+//   document.querySelector(".aboutMeEducation").classList.add("inactiveTab");
+//   document.querySelector(".aboutMeSkills").classList.add("inactiveTab");
+//   document.querySelector("#experience").style.color = "red";
+//   document.querySelector("#education").style.color = "white";
+//   document.querySelector("#skills").style.color = "white";
+// });
+// document.querySelector("#education").addEventListener("click", () => {
+//   document.querySelector(".aboutMeEducation").classList.remove("inactiveTab");
+//   document.querySelector(".aboutMeEducation").classList.add("activeTab");
+//   document.querySelector(".aboutMeExperience").classList.add("inactiveTab");
+//   document.querySelector(".aboutMeSkills").classList.add("inactiveTab");
+//   document.querySelector("#experience").style.color = "white";
+//   document.querySelector("#education").style.color = "red";
+//   document.querySelector("#skills").style.color = "white";
+// });
+
+//  not needed, New design 29/12/24
 
 // ########################################################## Code to show less and show more for the portfolios ##########################################################
 
-document.querySelector(".showMoreButton").addEventListener("click", () => {
-  for (let i = 0; i < document.querySelectorAll(".toggling").length; i++) {
-    document.querySelectorAll(".toggling")[i].classList.toggle("visible");
-  }
-  if (document.querySelector(".showMoreButton").textContent == "Show more") {
-    document.querySelector(".showMoreButton").textContent = "Show less";
-  } else if (
-    document.querySelector(".showMoreButton").textContent == "Show less"
-  ) {
-    document.querySelector(".showMoreButton").textContent = "Show more";
-  }
-});
+// document.querySelector(".showMoreButton").addEventListener("click", () => {
+//   for (let i = 0; i < document.querySelectorAll(".toggling").length; i++) {
+//     document.querySelectorAll(".toggling")[i].classList.toggle("visible");
+//   }
+//   if (document.querySelector(".showMoreButton").textContent == "Show more") {
+//     document.querySelector(".showMoreButton").textContent = "Show less";
+//   } else if (
+//     document.querySelector(".showMoreButton").textContent == "Show less"
+//   ) {
+//     document.querySelector(".showMoreButton").textContent = "Show more";
+//   }
+// });
 
 // ########################################################## code to show or hide the nav bars:- ##########################################################
 
-document.querySelector(".fa-bars").addEventListener("click", () => {
-  document.querySelector(".fa-bars").classList.toggle("show");
-  for (let i = 0; i < document.querySelectorAll(".navItems a").length; i++) {
-    document.querySelectorAll(".navItems a")[i].classList.toggle("show");
-  }
-  document.querySelector(".fa-xmark").classList.toggle("show");
-  document.querySelector(".navItems").style.padding = "5px";
-  // document.querySelector(".navItems a").classList.toggle('show');
-});
+// document.querySelector(".fa-bars").addEventListener("click", () => {
+//   document.querySelector(".fa-bars").classList.toggle("show");
+//   for (let i = 0; i < document.querySelectorAll(".navItems a").length; i++) {
+//     document.querySelectorAll(".navItems a")[i].classList.toggle("show");
+//   }
+//   document.querySelector(".fa-xmark").classList.toggle("show");
+//   document.querySelector(".navItems").style.padding = "5px";
+//   // document.querySelector(".navItems a").classList.toggle('show');
+// });
 
-document.querySelector(".fa-xmark").addEventListener("click", () => {
-  document.querySelector(".fa-xmark").classList.toggle("show");
-  for (let i = 0; i < document.querySelectorAll(".navItems a").length; i++) {
-    document.querySelectorAll(".navItems a")[i].classList.toggle("show");
-  }
-  document.querySelector(".fa-bars").classList.toggle("show");
-  document.querySelector(".navItems").style.padding = "0px";
-  // document.querySelector(".navItems a").classList.toggle('show');
-});
+// document.querySelector(".fa-xmark").addEventListener("click", () => {
+//   document.querySelector(".fa-xmark").classList.toggle("show");
+//   for (let i = 0; i < document.querySelectorAll(".navItems a").length; i++) {
+//     document.querySelectorAll(".navItems a")[i].classList.toggle("show");
+//   }
+//   document.querySelector(".fa-bars").classList.toggle("show");
+//   document.querySelector(".navItems").style.padding = "0px";
+//   // document.querySelector(".navItems a").classList.toggle('show');
+// });
 
-// ########################################################## code to show or hide the nav bars after clicking the navitems anchor tags!! ##########################################################
+//  code to show or hide the nav bars after clicking the navitems anchor tags 
 
-for (let i = 0; i < document.querySelectorAll(".navItems a").length; i++) {
-  document.querySelectorAll(".navItems a")[i].addEventListener("click", () => {
-    document.querySelector(".fa-xmark").classList.toggle("show");
-    for (let i = 0; i < document.querySelectorAll(".navItems a").length; i++) {
-      document.querySelectorAll(".navItems a")[i].classList.toggle("show");
-    }
-    document.querySelector(".fa-bars").classList.toggle("show");
-    document.querySelector(".navItems").style.padding = "0px";
-  });
+// for (let i = 0; i < document.querySelectorAll(".navItems a").length; i++) {
+//   document.querySelectorAll(".navItems a")[i].addEventListener("click", () => {
+//     document.querySelector(".fa-xmark").classList.toggle("show");
+//     for (let i = 0; i < document.querySelectorAll(".navItems a").length; i++) {
+//       document.querySelectorAll(".navItems a")[i].classList.toggle("show");
+//     }
+//     document.querySelector(".fa-bars").classList.toggle("show");
+//     document.querySelector(".navItems").style.padding = "0px";
+//   });
+// }
+
+// New design 29/12/24
+
+// Mobile menu functionality
+const hamburger = document.querySelector('.hamburger')
+const navMenu = document.querySelector('.nav-menu')
+const navLinks = document.querySelectorAll('.nav-link')
+
+function toggleMenu() {
+  hamburger.classList.toggle('active')
+  navMenu.classList.toggle('active')
 }
+
+hamburger.addEventListener('click', toggleMenu)
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('active')
+    navMenu.classList.remove('active')
+  })
+})
 
 // ########################################################## Code to link entire WorkDiv to the webpage ##########################################################
 // For laptops
-for (let i = 0; i < document.querySelectorAll(".work").length; i++) {
-  document.querySelectorAll(".work")[i].addEventListener("click", () => {
-    window.location.href = document.querySelectorAll(".work a")[i].href;
-  });
-}
+// for (let i = 0; i < document.querySelectorAll(".work").length; i++) {
+//   document.querySelectorAll(".work")[i].addEventListener("click", () => {
+//     window.location.href = document.querySelectorAll(".work a")[i].href;
+//   });
+// }
 // Not working!!
 // For Mobiles -- Using click
 // for (let i = 0; i < document.querySelectorAll(".workMobiles").length; i++) {
@@ -109,10 +132,10 @@ for (let i = 0; i < document.querySelectorAll(".work").length; i++) {
 
 // ########################################################## Code for numbering the workMobiles ##########################################################
 
-for (let i = 0; i < document.querySelectorAll(".workMobiles").length; i++) {
-  document.querySelectorAll(".numberingWorkMobiles")[i].innerHTML = `${i + 1}`;
+for (let i = 0; i < document.querySelectorAll(".project-card").length; i++) {
+  document.querySelectorAll(".project-number")[i].innerHTML = `${i + 1}`;
 }
-// document.querySelectorAll(".workMobiles")
+
 
 // ########################################################## For custom slider:- ##########################################################
 
@@ -232,3 +255,7 @@ window.addEventListener("load", function () {
     }, 900);
   }, 10); // 300ms delay before animation starts
 });
+
+// &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& Code for new design:- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+// 29/12/24 design for mobile view of projects

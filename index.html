@@ -37,8 +37,7 @@
 
     <!--  ########################################################## Top most section having navBar  ########################################################## -->
     <div id="header">
-        <h1 id="namedLogo"> <span class="logoFirstLetter">K</span>umar <span class="logoFirstLetter">H</span>arsh</h1>
-        <div class="navItems">
+        <!-- <div class="navItems">
             <a href="#intro">Home</a>
             <a href="#aboutMeContainer">About</a>
             <a href="#myWork">Portfolio</a>
@@ -46,25 +45,44 @@
             <a href="#contactMeMainContainer">Contact</a>
             <i class="fa-solid fa-xmark fa-2xl" style="color: #fcfcfd;"></i>
         </div>
-        <i class="fa-solid fa-bars fa-xl show" style="color: #ffffff;"></i>
+        <i class="fa-solid fa-bars fa-xl show" style="color: #ffffff;"></i> -->
+
+        <!-- New Design 29/12/24 -->
+        <div class="nav-container">
+            <nav class="nav">
+                <h1 id="namedLogo"> <span class="logoFirstLetter">K</span>umar <span class="logoFirstLetter">H</span>arsh</h1>
+                <button class="hamburger">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                <ul class="nav-menu">
+                    <!-- <li><a href="#intro" class="nav-link">Home</a></li> -->
+                    <li><a href="#aboutMeContainer" class="nav-link">Experience</a></li>
+                    <li><a href="#myWorkContainerCont" class="nav-link">Portfolio</a></li>
+                    <li><a href="#blogTopic" class="nav-link">Blog</a></li>
+                    <li><a href="#contactMeMainContainer" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
+
+    <!-- Back to Top button -->
+    <button id="back-to-top" onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></button>
 
     <!--  ########################################################## Second layer, having Intro  ########################################################## -->
     <div id="intro">
-        <div class="aboutMeWriteup introLeftPortion" id="leftDiv" >
-            <!-- NOTE: for Laptops <i class="fa-regular fa-snowflake"></i> This greeting and the below one paragraph -->
+        <!-- <div class="aboutMeWriteup introLeftPortion" id="leftDiv" >
             <h1 id="GreetingsForLaptop" >Greetings!
                 <br>
                 <span class="myName">I'm KUMAR HARSH</span>
                 <br>
                 a Software Developer
             </h1>
-            <!-- NOTE: for mobiles <i class="fa-regular fa-snowflake"></i> Only greetings  -->
             <h1 id="GreetingsForMobiles">
                 Greetings! <span class="myName">I'm <br> KUMAR HARSH</span> <br> a Software Developer
             </h1>
 
-            <!-- NOTE: for Laptops <i class="fa-regular fa-snowflake"></i> This paragraph and the above greetings -->
             <p class="p1">I am currently a third year undergraduate student at Maharaja Agrasen Institute of Technology (MAIT), Delhi, pursuing a Bachelor of
                 Technology in Computer Science and Engineering with a specialization in Artificial Intelligence and Machine
                 Learning. <br> <br> My passion lies in the field of coding, where I spend a significant part of my time
@@ -76,17 +94,47 @@
                 unwavering commitment and enthusiasm. Your consideration of my journey would be greatly appreciated.
             </p>
         </div>
-        <img src="imageResources/KH_subject.png" class="myPoster introRightPortion" id="rightDiv" alt="myPoster">
+        <img src="imageResources/KH_subject.png" class="myPoster introRightPortion" id="rightDiv" alt="myPoster"> -->
+        <!-- NOTE: New design (29/12/24) -->
 
-    </div>
+        <div class="introHeroSkills">
 
-    <!-- Open project with live server :- https://www.youtube.com/shorts/yrY68DgO79A?feature=share -->
-    <!--  ########################################################## intro section ends  ########################################################## -->
-    <!--  ########################################################## Third portion of the website:- About Me  ########################################################## -->
+        
 
-    <div id="aboutMeContainer">
-        <div id="aboutMeContainerDpAndWriteup">
-            <div id="wrapperDivWrappingDpAndWriteup" >
+        <main class="hero">
+            <div class="myDpContainer">
+                <img src="imageResources/KH_dp.png" alt="myDp" class="myDp">
+                <div>
+                    My resume :- <a target="_blank"
+                        href="https://drive.google.com/file/d/1FKiw5rS5nF5znLQv2ErKUaWetYIJ6AEW/view?usp=sharing"><i
+                            class="fa-solid fa-file fa-lg" style="color: #f04c64;"></i></a>
+                </div>
+            </div>
+            <h3>Greetings! 👋🏻 I'm a</h2>
+            <h1 class="heroTitle">Full-Stack Developer</h1>
+            <h2 class="heroSubtitle">& Software Engineer</h2>
+            <p class="description">
+                My name is Kumar Harsh. I am a passionate software engineer with a strong blend of technical expertise and
+                problem-solving skills, dedicated to building robust applications and crafting innovative digital solutions.
+            </p>
+            <div class="social-links">
+                <a href="https://github.com/kharsh560" target="_blank" class="social-icon">
+                    <i class="fa-brands fa-github fa-2xl" style="color: #8c8c8c;"></i>
+                </a>
+                <a href="https://twitter.com/kharsh560" target="_blank" class="social-icon">
+                    <i class="fa-brands fa-x-twitter fa-2xl" style="color: #999999;"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/kharsh560/" target="_blank" class="social-icon">
+                    <i class="fa-brands fa-linkedin fa-2xl" style="color: #a7aaae;"></i>
+                </a>
+                <a href="https://www.instagram.com/kharsh560/" target="_blank" class="social-icon">
+                    <i class="fa-brands fa-instagram fa-2xl" style="color: #8e8f90;"></i>
+                </a>
+            </div>
+        </main>
+
+        <!-- <div id="aboutMeContainerDpAndWriteup">
+            <div id="wrapperDivWrappingDpAndWriteup">
                 <img src="imageResources/KH_dp.png" alt="myDp" class="myDp">
                 <div id="aboutMeContainerWriteup">
                     <h1>About Me</h1>
@@ -101,129 +149,166 @@
                         1. Data Structures and Algorithms <br>
                         2. Full Stack Web Development (MERN stack + NEXT) <br>
                         3. Data Science:- thus exploring AI & ML! <br>
-                        <!-- 4. Exploring BlockChain & Web3 <br> <br> -->
                     </p>
                 </div>
             </div>
-        </div>
+        </div> -->
 
+        <section class="techStacksAndSkillsSection">
+            <div class="tech-skills-section">
+                <h2 class="section-title">Tech Stack & Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>Frontend</h3>
+                        <ul>
+                            <li>HTML, CSS</li>
+                            <li>JavaScript</li>
+                            <li>Tailwind CSS</li>
+                            <li>React</li>
+                            <li>Next.js</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Backend</h3>
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                            <li>MongoDB</li>
+                            <li>Mongoose</li>
+                            <li>Prisma</li>
+                            <li>Appwrite</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Programming</h3>
+                        <ul>
+                            <li>C++</li>
+                            <li>Data Structures and Algorithms</li>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                            <li>OOPs</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Tools</h3>
+                        <ul>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>VS Code</li>
+                            <li>Postman</li>
+                            <li>Atlas / Neon</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3>AI&ML</h3>
+                        <ul>
+                            <li>LLM - Training</li>
+                            <li>Prompt Engineering</li>
+                            <li>Machine Learning</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Deployment</h3>
+                        <ul>
+                            <li>Deployment automation</li>
+                            <li>Service Orchestration</li>
+                            <li>Docker</li>
+                            <li>Kubernetes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="https://drive.google.com/file/d/1FKiw5rS5nF5znLQv2ErKUaWetYIJ6AEW/view?usp=sharing" target="_blank" class="btn btn-primary">Work With Me</a>
+                <a href="mailto:kharsh560@gmail.com" class="btn btn-secondary">Let's Collaborate</a>
+            </div>
+        </section>
+        </div>
+    </div>
+
+    <!-- Open project with live server :- https://www.youtube.com/shorts/yrY68DgO79A?feature=share -->
+    <!--  ########################################################## intro section ends  ########################################################## -->
+    <!--  ########################################################## Third portion of the website:- About Me  ########################################################## -->
+
+    <div id="aboutMeContainer">
         <hr>
-
-        <div class="aboutMeDetails ">
-            <h3>A comprehensive overview of my accomplishments thus far encompasses:</h3>
-            <div class="aboutMeTabs">
-                <p id="experience">Experience</p>
-                <p id="skills">Skills</p>
-                <p id="education">Education</p>
-            </div>
-
-            <div class="aboutMeExperience">
-                <!-- 4 -->
-
-                <div class="aboutMeInfoTopic">
-                    <p>Full Stack Developer & LLM Engineer Intern</p>
-                </div>
-                <div>
-                    <p>
-                        <i class="fa-regular fa-snowflake"></i> at Stealth Start-up | [August 2024 -> Present] <br>
-                        <i class="fa-regular fa-snowflake"></i> Kubernetes Deployment and Service Orchestration : Deployed and managed containerized services using Kubernetes on
-                        Docker, optimizing ingress gateways, resource allocation, and service connections. Automated deployments with Helm and
-                        resolved pod-related issues for reliable microservice communication. <br>
-                        <i class="fa-regular fa-snowflake"></i> Spearheaded the development of a responsive, user-centric full-stack webapp using Next.js translating business
-                        requirements into a seamless end-to-end solution by streamlining the entire development pipeline juggling between
-                        frontend and backend. <br>
-                        <i class="fa-regular fa-snowflake"></i> Training LLMs using prompt engineering, enabling the start-up to deploy AI-driven automation features that’ll enhance
-                        its core product offering and differentiate it in the market by integrating LLM-based solutions into customer-facing
-                        products. <br>
-                    </p>
-                </div>
-
-                <div class="aboutMeInfoTopic">
-                    <p>Technical Executive at CSI-IW</p>
-                </div>
-                <div>
-                    <p>
-                    <i class="fa-regular fa-snowflake"></i> [July 2024 -> Present] <br>
-                    <i class="fa-regular fa-snowflake"></i> Active Member of the Technical Team as a technical executive at CSI-INNOWAVE. <br>
-                    <i class="fa-regular fa-snowflake"></i> Its one of the oldest and most prestigious societies at Maharaja Agrasen Institute of Technology, Delhi, started in the year 2009. <br>
-                    <i class="fa-regular fa-snowflake"></i> Coordinated with my team to organize & execute our society's flagship technical & entertainment fest, Zypher,
-                    successfully ensuring and managing a footfall of over 1000 attendees. (September 2024)
-                    </p>
-                </div>
-
-                <!-- 4 -->
-                <div class="aboutMeInfoTopic">
-                    <p>Selected amongst #Top10 teams in NIT Patna's PitchTemberFest.</p>
-                </div>
-                <div>
-                    <p>
-                        <i class="fa-regular fa-snowflake"></i> My team managed to secure a position under top 10 teams in NIT Patna's PitchTemberFest
-                        where in we had worked on our platform SyncSphere.
-                    </p>
-                </div>
+        <section class="experience-achievement-section">
+            <h2 class="experience-achievement-title">Experience</h2>
         
-                <!-- 5 -->
-                <div class="aboutMeInfoTopic">
-                    <p>Our solution got accepted in Google Solution Challenge under GDSC.</p>
+            <div class="experience-card">
+                <h3 class="role">Full Stack Developer & LLM Engineer Intern</h3>
+                <div class="company">
+                    at Stealth Start-up
+                    <span class="duration">[August 2024 -> Present]</span>
                 </div>
-                <div>
-                    <p>
-                        <i class="fa-regular fa-snowflake"></i> In the Google Solution Challenge, we elevated our project by integrating Google products like Gemini, enabling
-                        personalized responses for tax benefits based on income. We also received recognition by being shortlisted for the GDSC India regional Bootcamp, where we received personalized
-                        mentorship from Google Developers. <br> <br>
-
-                        <i class="fa-regular fa-snowflake"></i> You can see this post of mine on <a class="GDSCpost" href="https://www.linkedin.com/posts/kumar-harsh-468a22253_top10-top100-syncsphere-activity-7185929396371816451-Nwh-?utm_source=share&utm_medium=member_desktop">Linkedin</a> for more info related to these events.
-                    </p>
+                <ul class="responsibilities">
+                    <li class="responsibility-item">
+                        Kubernetes Deployment and Service Orchestration: Deployed and managed containerized services using
+                        Kubernetes on Docker, optimizing ingress gateways, resource allocation, and service connections.
+                        Automated deployments with Helm and resolved pod-related issues for reliable microservice communication.
+                    </li>
+                    <li class="responsibility-item">
+                        Spearheaded the development of a responsive, user-centric full-stack webapp using Next.js translating
+                        business requirements into a seamless end-to-end solution by streamlining the entire development
+                        pipeline juggling between frontend and backend.
+                    </li>
+                    <li class="responsibility-item">
+                        Training LLMs using prompt engineering, enabling the start-up to deploy AI-driven automation features
+                        that'll enhance its core product offering and differentiate it in the market by integrating LLM-based
+                        solutions into customer-facing products.
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="experience-card">
+                <h3 class="role">Technical Executive at CSI-IW</h3>
+                <div class="company">
+                    CSI-INNOWAVE
+                    <span class="duration">[July 2024 -> Present]</span>
                 </div>
-                <!-- 6 -->
-                <div class="aboutMeInfoTopic">
-                    <p>Have worked on quite a few Projects.</p>
-                </div>
-                <div>
-                    <p>I have worked upon some of the very fundamental projects as a part of <br> 
-                        learning Web Development, at which you can have a look on, in the "My Work" section.</p>
-                </div>
+                <ul class="responsibilities">
+                    <li class="responsibility-item">
+                        Active Member of the Technical Team as a technical executive at CSI-INNOWAVE which is one of the oldest and most prestigious societies at Maharaja Agrasen Institute of Technology, Delhi,
+                        started in the year 2009.
+                    </li>
+                    <li class="responsibility-item">
+                        Contributed in making <a href="https://www.csiinnowave.com/">CSI’s website</a> using NEXT.Js, Aceternity UI and Tailwind.
+                    </li>
+                    <li class="responsibility-item">
+                        Contributing in backend of CSI’s mobile app using Prisma over PostgreSQL, Node.Js & Express handling Auth & CRUD.
+                    </li>
+                    <li class="responsibility-item">
+                        Coordinated with my team to organize & execute our society's flagship technical & entertainment fest,
+                        Zypher, successfully ensuring and managing a footfall of over 1000 attendees. (September 2024)
+                    </li>
+                </ul>
             </div>
 
-            <div class="aboutMeSkills inactiveTab">
-                <!-- 1 -->
-                <div class="aboutMeInfoTopic">
-                    <p>Programming In C/C++</p>
-                </div>
-                <div>
-                    <p>Learning DSA in C/C++ and <br> solving problems on Leetcode and Codestudio!</p>
-                </div>
-                <!-- 2 -->
-                <div class="aboutMeInfoTopic">
-                    <p>Web Development</p>
-                </div>
-                <div>
-                    <p>Learning Fullstack Web Development and currently in frontend portion of it doing
-                        React.Js after learning HTML, CSS and JS! Also have worked upon the backend portion!
-                        See the blog section to know more. </p>
-                </div>
-                <!-- 3 -->
-                <div class="aboutMeInfoTopic">
-                    <p>Data Science</p>
-                </div>
-                <div>
-                    <p>Currently, I am learning Data Science to understand how AI and ML can be leveraged to drive business and
-                        strategic decisions.</p>
-                </div>
+            <h2 class="experience-achievement-title">Achievements</h2>
+        
+            <div class="achievement">
+                <h3 class="achievement-title">Selected amongst #Top10 teams in NIT Patna's PitchTemberFest</h3>
+                <p class="responsibility-item">
+                    My team managed to secure a position under top 10 teams in NIT Patna's PitchTemberFest where in we had
+                    worked on our platform SyncSphere.
+                </p>
             </div>
-
-            <div class="aboutMeEducation inactiveTab">
-                <!-- 7 -->
-                <div class="aboutMeInfoTopic">
-                    <p>Currently a B.Tech UnderGrad</p>
-                </div>
-                <div>
-                    <p>Pursuing B.Tech in Computer Science and Engineering with specialization in Artificial
-                        Intelligence and Machine Learning, presently in 3rd-year.</p>
-                </div>
-                
+        
+            <div class="achievement">
+                <h3 class="achievement-title">Our solution got accepted in Google Solution Challenge under GDSC</h3>
+                <p class="responsibility-item">
+                    In the Google Solution Challenge, we elevated our project by integrating Google products like Gemini,
+                    enabling personalized responses for tax benefits based on income. We also received recognition by being
+                    shortlisted for the GDSC India regional Bootcamp, where we received personalized mentorship from Google
+                    Developers.
+                </p>
             </div>
-        </div>
+        
+            <a href="https://www.linkedin.com/posts/kharsh560_top10-top100-syncsphere-activity-7185929396371816451-8X_4?utm_source=share&utm_medium=member_desktop" class="linkedin-link">
+                You can see this post of mine on LinkedIn for more info related to these events.
+            </a>
+        </section>
     </div>
 
     <hr id="hrAboveMyWorkinLaptop">
@@ -231,271 +316,244 @@
     <!--  ########################################################## about me section ends  ########################################################## -->
     <!--  ########################################################## Portfolio section begins  ########################################################## -->
     <!-- NOTE  ########################################################## Portfolio section for Laptops ########################################################## -->
-    <h1 id="myWork">My Hosted Work</h1>
-    <div class="myPortfolioContainerLaptops">
+    <div id="myWorkContainerCont">
+        <div class="myWorkContainer">
+             <h1 id="myWork">My Hosted Work</h1>
+        </div>
+    </div> 
 
-        <!-- -1 th -->
-        <div class="work">
-            <img src="./imageResources/todoListBGimg.jpg" alt="TO-DO list">
-            <div class="layer">
-                <h3>To-Do list App</h3>
-                <p>
-                    A TODO app is vital for daily life as it enhances productivity by organizing and prioritizing tasks, ensuring efficient
-                    time management. It fosters accountability and helping users stay focused and on track. So wait not and try this TO-DO app which does not looses your todos even after refreshing, achieved by incorporating <b>local storage</b>.
-                </p>
-                <span id="techStacks">
-                    <i class="fa-brands fa-html5 fa-beat-fade fa-lg"></i>
-                    <i class="fa-brands fa-css3 fa-beat-fade fa-lg"></i>
-                    <svg id="tailwindIcon" height="20" preserveAspectRatio="xMidYMid" viewBox="0 0 256 154" width="20"
-                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <linearGradient id="a" x1="-2.777778%" x2="100%" y1="32%" y2="67.555556%">
-                            <stop offset="0" stop-color="#2298bd" />
-                            <stop offset="1" stop-color="#0ed7b5" />
-                        </linearGradient>
-                        <path
-                            d="m128 0c-34.1333333 0-55.4666667 17.0666667-64 51.2 12.8-17.0666667 27.7333333-23.4666667 44.8-19.2 9.737481 2.4343704 16.697363 9.4985481 24.401067 17.3184 12.549689 12.7383704 27.07437 27.4816 58.798933 27.4816 34.133333 0 55.466667-17.0666667 64-51.2-12.8 17.0666667-27.733333 23.4666667-44.8 19.2-9.737481-2.4343704-16.697363-9.4985481-24.401067-17.3184-12.549689-12.7383704-27.07437-27.4816-58.798933-27.4816zm-64 76.8c-34.1333333 0-55.46666667 17.0666667-64 51.2 12.8-17.066667 27.7333333-23.466667 44.8-19.2 9.7374815 2.43437 16.697363 9.498548 24.4010667 17.3184 12.5496889 12.73837 27.0743703 27.4816 58.7989333 27.4816 34.133333 0 55.466667-17.066667 64-51.2-12.8 17.066667-27.733333 23.466667-44.8 19.2-9.737481-2.43437-16.697363-9.498548-24.401067-17.3184-12.549689-12.7383704-27.07437-27.4816-58.798933-27.4816z"
-                            fill="url(#a)" />
-                    </svg>
-                    <i class="fa-brands fa-square-js fa-beat-fade fa-lg" style="color: #63E6BE;"></i>
-                    <i class="fa-brands fa-react fa-xl fa-bounce" style="color: #63E6BE;"></i>
-                </span>
-                <a href="https://todo-with-localstorage-kh.netlify.app" id="extLinkAnchor" target="_blank"><img
-                        src="imageResources/ExternalLink1.png" alt="extLinkIcon" id="extLink"></a>
-            </div>
-        </div>
+    <div id="portfolioSection">
+        <div class="projects">
+            <article class="project-card">
+                <div class="project-number">1</div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <h2>To-Do List App</h2>
+                        <img src="https://images.unsplash.com/photo-1540350394557-8d14678e7f91?auto=format&fit=crop&w=400"
+                            alt="Todo List Preview" class="project-image">
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-badge">HTML5</span>
+                        <span class="tech-badge">CSS3</span>
+                        <span class="tech-badge">Tailwind</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">React</span>
+                    </div>
+                </div>
+                <a href="https://todo-with-localstorage-kh.netlify.app/" class="project-link">View Project</a>
+            </article>
+        
+            <article class="project-card">
+                <div class="project-number">2</div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <h2>Currency Converter</h2>
+                        <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=400"
+                            alt="Currency Converter Preview" class="project-image">
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-badge">HTML5</span>
+                        <span class="tech-badge">CSS3</span>
+                        <span class="tech-badge">Tailwind</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">React</span>
+                    </div>
+                </div>
+                <a href="https://kh-currency-changer.netlify.app/" class="project-link">View Project</a>
+            </article>
 
-        <!-- 0th -->
-        <div class="work">
-            <img src="./imageResources/currencyBG.webp" alt="Currency_Convertor">
-            <div class="layer">
-                <h3>Currency Convertor</h3>
-                <p>In the bustling heart of a vibrant marketplace, a traveler pauses, smartphone in hand. Through the magic of a currency
-                converter app, the chaotic symphony of foreign prices transforms into the familiar whispers of his home currency. <br>
-                The app, a silent companion, bridges worlds, making foreign lands feel a little more like home.</p>
-                <span id="techStacks">
-                    <i class="fa-brands fa-html5 fa-beat-fade fa-lg"></i>
-                    <i class="fa-brands fa-css3 fa-beat-fade fa-lg"></i>
-                    <svg id="tailwindIcon" height="20" preserveAspectRatio="xMidYMid" viewBox="0 0 256 154" width="20"
-                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <linearGradient id="a" x1="-2.777778%" x2="100%" y1="32%" y2="67.555556%">
-                            <stop offset="0" stop-color="#2298bd" />
-                            <stop offset="1" stop-color="#0ed7b5" />
-                        </linearGradient>
-                        <path
-                            d="m128 0c-34.1333333 0-55.4666667 17.0666667-64 51.2 12.8-17.0666667 27.7333333-23.4666667 44.8-19.2 9.737481 2.4343704 16.697363 9.4985481 24.401067 17.3184 12.549689 12.7383704 27.07437 27.4816 58.798933 27.4816 34.133333 0 55.466667-17.0666667 64-51.2-12.8 17.0666667-27.733333 23.4666667-44.8 19.2-9.737481-2.4343704-16.697363-9.4985481-24.401067-17.3184-12.549689-12.7383704-27.07437-27.4816-58.798933-27.4816zm-64 76.8c-34.1333333 0-55.46666667 17.0666667-64 51.2 12.8-17.066667 27.7333333-23.466667 44.8-19.2 9.7374815 2.43437 16.697363 9.498548 24.4010667 17.3184 12.5496889 12.73837 27.0743703 27.4816 58.7989333 27.4816 34.133333 0 55.466667-17.066667 64-51.2-12.8 17.066667-27.733333 23.466667-44.8 19.2-9.737481-2.43437-16.697363-9.498548-24.401067-17.3184-12.549689-12.7383704-27.07437-27.4816-58.798933-27.4816z"
-                            fill="url(#a)" />
-                    </svg>
-                    <i class="fa-brands fa-square-js fa-beat-fade fa-lg" style="color: #63E6BE;"></i>
-                    <i class="fa-brands fa-react fa-xl fa-bounce" style="color: #63E6BE;"></i>
-                </span>
-                <a href="https://kh-currency-changer.netlify.app/" id="extLinkAnchor" target="_blank"><img
-                        src="imageResources/ExternalLink1.png" alt="extLinkIcon" id="extLink"></a>
-            </div>
-        </div>
+            <article class="project-card">
+                <div class="project-number">3</div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <h2>Password Generator</h2>
+                        <img src="./imageResources/passCodeBgImg.jpeg"
+                            alt="Currency Converter Preview" class="project-image">
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-badge">HTML5</span>
+                        <span class="tech-badge">CSS3</span>
+                        <span class="tech-badge">Tailwind</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">React</span>
+                    </div>
+                </div>
+                <a href="https://kh-password-generator.netlify.app/" class="project-link">View Project</a>
+            </article>
 
-        <!-- 1 -->
-        <div class="work">
-            <img src="./imageResources/passCodeBgImg.jpeg" alt="RandomPasswordGenerator">
-            <div class="layer">
-                <h3>Random Password Generator</h3>
-                <p>A Random Password Generator is crucial for digital security. By generating unique combinations of characters, it prevents predictable patterns and reused credentials,
-                significantly enhancing security against cyber threats and reducing data breach risks for both individuals and
-                businesses. <br> This app build on React serves the same purpose. Do try it and let hackers dream of cracking your code!</p>
-                <span id="techStacks">
-                    <i class="fa-brands fa-html5 fa-beat-fade fa-lg"></i>
-                    <i class="fa-brands fa-css3 fa-beat-fade fa-lg"></i>
-                    <svg id="tailwindIcon" height="20" preserveAspectRatio="xMidYMid" viewBox="0 0 256 154" width="20"
-                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <linearGradient id="a" x1="-2.777778%" x2="100%" y1="32%" y2="67.555556%">
-                            <stop offset="0" stop-color="#2298bd" />
-                            <stop offset="1" stop-color="#0ed7b5" />
-                        </linearGradient>
-                        <path
-                            d="m128 0c-34.1333333 0-55.4666667 17.0666667-64 51.2 12.8-17.0666667 27.7333333-23.4666667 44.8-19.2 9.737481 2.4343704 16.697363 9.4985481 24.401067 17.3184 12.549689 12.7383704 27.07437 27.4816 58.798933 27.4816 34.133333 0 55.466667-17.0666667 64-51.2-12.8 17.0666667-27.733333 23.4666667-44.8 19.2-9.737481-2.4343704-16.697363-9.4985481-24.401067-17.3184-12.549689-12.7383704-27.07437-27.4816-58.798933-27.4816zm-64 76.8c-34.1333333 0-55.46666667 17.0666667-64 51.2 12.8-17.066667 27.7333333-23.466667 44.8-19.2 9.7374815 2.43437 16.697363 9.498548 24.4010667 17.3184 12.5496889 12.73837 27.0743703 27.4816 58.7989333 27.4816 34.133333 0 55.466667-17.066667 64-51.2-12.8 17.066667-27.733333 23.466667-44.8 19.2-9.737481-2.43437-16.697363-9.498548-24.401067-17.3184-12.549689-12.7383704-27.07437-27.4816-58.798933-27.4816z"
-                            fill="url(#a)" />
-                    </svg>
-                    <i class="fa-brands fa-square-js fa-beat-fade fa-lg" style="color: #63E6BE;"></i>
-                    <i class="fa-brands fa-react fa-xl fa-bounce" style="color: #63E6BE;"></i>
-                </span>
-                <a href="https://kh-password-generator.netlify.app/" id="extLinkAnchor" target="_blank"><img
-                        src="imageResources/ExternalLink1.png" alt="extLinkIcon" id="extLink"></a>
-            </div>
-        </div>
-        <!-- 2 -->
-        <div class="work toggling invisible">
-            <img src="./imageResources/bgChangerReact.jpeg" alt="BGcolorChangerReact">
-            <div class="layer">
-                <h3>BG Color Changer using React</h3>
-                <p>Its a very simple yet important project built on react where in I explored React's "Props" concept which
-                    enables us to leverage the React Components, pass functions to the child component using props to fetch any variable from the
-                    child component to parent. Also I used Tailwind CSS which makes styling Blazing Fast!
-                </p>
-                <span id="techStacks">
-                    <i class="fa-brands fa-html5 fa-beat-fade fa-lg"></i>
-                    <i class="fa-brands fa-css3 fa-beat-fade fa-lg"></i>
-                    <svg id="tailwindIcon" height="20" preserveAspectRatio="xMidYMid" viewBox="0 0 256 154" width="20" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <linearGradient id="a" x1="-2.777778%" x2="100%" y1="32%" y2="67.555556%">
-                            <stop offset="0" stop-color="#2298bd" />
-                            <stop offset="1" stop-color="#0ed7b5" />
-                        </linearGradient>
-                        <path
-                            d="m128 0c-34.1333333 0-55.4666667 17.0666667-64 51.2 12.8-17.0666667 27.7333333-23.4666667 44.8-19.2 9.737481 2.4343704 16.697363 9.4985481 24.401067 17.3184 12.549689 12.7383704 27.07437 27.4816 58.798933 27.4816 34.133333 0 55.466667-17.0666667 64-51.2-12.8 17.0666667-27.733333 23.4666667-44.8 19.2-9.737481-2.4343704-16.697363-9.4985481-24.401067-17.3184-12.549689-12.7383704-27.07437-27.4816-58.798933-27.4816zm-64 76.8c-34.1333333 0-55.46666667 17.0666667-64 51.2 12.8-17.066667 27.7333333-23.466667 44.8-19.2 9.7374815 2.43437 16.697363 9.498548 24.4010667 17.3184 12.5496889 12.73837 27.0743703 27.4816 58.7989333 27.4816 34.133333 0 55.466667-17.066667 64-51.2-12.8 17.066667-27.733333 23.466667-44.8 19.2-9.737481-2.43437-16.697363-9.498548-24.401067-17.3184-12.549689-12.7383704-27.07437-27.4816-58.798933-27.4816z"
-                            fill="url(#a)" />
-                    </svg>
-                    <i class="fa-brands fa-square-js fa-beat-fade fa-lg" style="color: #63E6BE;"></i>
-                    <i class="fa-brands fa-react fa-xl fa-bounce" style="color: #63E6BE;"></i>
-                </span>
-                <a href="https://kh-bg-changer.netlify.app/" id="extLinkAnchor" target="_blank"><img
-                        src="imageResources/ExternalLink1.png" alt="extLinkIcon" id="extLink"></a>
-            </div>
-        </div>
-        <!-- 3 -->
-        <div class="work toggling invisible">
-            <img src="imageResources/GuessTheNumberPoster.avif" alt="GuessTheNumberGame">
-            <div class="layer">
-                <h3>Guess The Number Game</h3>
-                <p>This is a game in which you have to guess a number in between 1 to 100 for
-                    which you will be given 10 chances and also hints for every number whether
-                    you have to guess higher or lower number than that!</p>
-                <span id="techStacks">
-                    <i class="fa-brands fa-html5 fa-beat-fade fa-lg"></i>
-                    <i class="fa-brands fa-css3 fa-beat-fade fa-lg"></i>
-                    <i class="fa-brands fa-square-js fa-beat-fade fa-lg" style="color: #63E6BE;"></i>
-                </span>
-                <a href="https://kharsh560.github.io/GuessTheNumberBy_KumarHarsh/" id="extLinkAnchor"
-                    target="_blank"><img src="imageResources/ExternalLink1.png" alt="extLinkIcon" id="extLink"></a>
-            </div>
-        </div>
+            <article class="project-card">
+                <div class="project-number">4</div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <h2>BG Color Changer</h2>
+                        <img src="./imageResources/bgChangerReact.jpeg" alt="Currency Converter Preview" class="project-image">
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-badge">HTML5</span>
+                        <span class="tech-badge">CSS3</span>
+                        <span class="tech-badge">Tailwind</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">React</span>
+                    </div>
+                </div>
+                <a href="https://kh-bg-changer.netlify.app/" class="project-link">View Project</a>
+            </article>
 
-        <!-- 4 -->
-        <div class="work toggling invisible">
-            <img src="imageResources/dhunBrandPic.png" alt="dhunMusicStreamingWebApp" id="dhun">
-            <div class="layer">
-                <h3>Dhun music App ~ Feel the music</h3>
-                <p>This is a music streaming app which I have built myself, having all the functionality linked
-                    play, pause, forward (10s) and backward, along with slider functionality! Means its a fully
-                    equiped music streaming app having all the important features.
-                </p>
-                <span id="techStacks">
-                    <i class="fa-brands fa-html5 fa-beat-fade fa-lg"></i>
-                    <i class="fa-brands fa-css3 fa-beat-fade fa-lg"></i>
-                    <i class="fa-brands fa-square-js fa-beat-fade fa-lg" style="color: #63E6BE;"></i>
-                </span>
-                <a href="https://kharsh560.github.io/dhun_Feel_the_Music_BY_Kumar_Harsh/" id="extLinkAnchor"
-                    target="_blank"><img src="imageResources/ExternalLink1.png" alt="extLinkIcon" id="extLink"></a>
-            </div>
-        </div>
+            <article class="project-card">
+                <div class="project-number">5</div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <h2>Guess The Number</h2>
+                        <img src="imageResources/GuessTheNumberPoster.avif" alt="Currency Converter Preview" class="project-image">
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-badge">HTML5</span>
+                        <span class="tech-badge">CSS3</span>
+                        <span class="tech-badge">JavaScript</span>
+                    </div>
+                </div>
+                <a href="https://kharsh560.github.io/GuessTheNumberBy_KumarHarsh/" class="project-link">View Project</a>
+            </article>
 
-        <!-- 5 -->
-        <div class="work toggling invisible">
-            <img src="imageResources/DrumKitPoster.jpeg" alt="DrumKitGame">
-            <div class="layer">
-                <h3>The Drum Kit</h3>
-                <p>Its a Drum kit game in which there are all the sets of drum including two tom-toms, a floor tom,
-                    a bass drum, and a snare drum. You can play the drums either by using the mouse or by using the
-                    keyboard buttons as mentioned! So, all the drummers out there, Rock&Roll!
-                </p>
-                <span id="techStacks">
-                    <i class="fa-brands fa-html5 fa-beat-fade fa-lg"></i>
-                    <i class="fa-brands fa-css3 fa-beat-fade fa-lg"></i>
-                    <i class="fa-brands fa-square-js fa-beat-fade fa-lg" style="color: #63E6BE;"></i>
-                </span>
-                <a href="https://kharsh560.github.io/Drumkit_by_kumar_harsh.github.io/" id="extLinkAnchor"
-                    target="_blank"><img src="imageResources/ExternalLink1.png" alt="extLinkIcon" id="extLink"></a>
-            </div>
-        </div>
+            <!-- rest of them: generated by gpt by giving reference. -->
 
-        <!-- 6 -->
-        <div class="work toggling invisible">
-            <img src="imageResources/BMIposter2.webp" alt="BMIcalculator">
-            <div class="layer">
-                <h3>The Bmi Calculator</h3>
-                <p>Its a simple BMI calculator app, in which you need to enter your height and weight, using which this
-                    app tells your BMI!
-                    So, Let's see how fit you are!
-                </p>
-                <span id="techStacks">
-                    <i class="fa-brands fa-html5 fa-beat-fade fa-lg"></i>
-                    <i class="fa-brands fa-css3 fa-beat-fade fa-lg"></i>
-                    <i class="fa-brands fa-square-js fa-beat-fade fa-lg" style="color: #63E6BE;"></i>
-                </span>
-                <a href="https://kharsh560.github.io/BMI_calculator_BY_Kumar_Harsh/" id="extLinkAnchor"
-                    target="_blank"><img src="imageResources/ExternalLink1.png" alt="extLinkIcon" id="extLink"></a>
-            </div>
-        </div>
+            <article class="project-card">
+                <div class="project-number">4</div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <h2>Dhun Music App</h2>
+                        <img src="imageResources/DhunAppLogo.avif" alt="Dhun Music Streaming App" class="project-image">
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-badge">HTML5</span>
+                        <span class="tech-badge">CSS3</span>
+                        <span class="tech-badge">JavaScript</span>
+                    </div>
+                </div>
+                <a href="https://kharsh560.github.io/dhun_Feel_the_Music_BY_Kumar_Harsh/" class="project-link">View Project</a>
+            </article>
+            
+            <article class="project-card">
+                <div class="project-number">5</div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <h2>The Drum Kit</h2>
+                        <img src="imageResources/DrumKitPoster.jpeg" alt="Drum Kit Game" class="project-image">
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-badge">HTML5</span>
+                        <span class="tech-badge">CSS3</span>
+                        <span class="tech-badge">JavaScript</span>
+                    </div>
+                </div>
+                <a href="https://kharsh560.github.io/Drumkit_by_kumar_harsh.github.io/" class="project-link">View Project</a>
+            </article>
+            
+            <article class="project-card">
+                <div class="project-number">6</div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <h2>The BMI Calculator</h2>
+                        <img src="imageResources/BMIposter2.webp" alt="BMI Calculator App" class="project-image">
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-badge">HTML5</span>
+                        <span class="tech-badge">CSS3</span>
+                        <span class="tech-badge">JavaScript</span>
+                    </div>
+                </div>
+                <a href="https://kharsh560.github.io/BMI_calculator_BY_Kumar_Harsh/" class="project-link">View Project</a>
+            </article>
+            
+            <article class="project-card">
+                <div class="project-number">7</div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <h2>The Dice Game</h2>
+                        <img src="imageResources/DiceGamePoster.jpeg" alt="Dice Game" class="project-image">
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-badge">HTML5</span>
+                        <span class="tech-badge">CSS3</span>
+                        <span class="tech-badge">JavaScript</span>
+                    </div>
+                </div>
+                <a href="https://kharsh560.github.io/dicee_game_by_kumar_harsh/" class="project-link">View Project</a>
+            </article>
 
-        <!-- 7 -->
-        <div class="work toggling invisible">
-            <img src="imageResources/DiceGamePoster.jpeg" alt="DiceGame" class=" DiceGame">
-            <div class="layer">
-                <h3>The Dice Game</h3>
-                <p>Are you not able to decide amongst your friend that who's goanna ride the bike and
-                    who's goanna sit at the back??
-                    Don't worry, I got you! Here is a simple app of tossing a die for each one of you
-                    to see who wins and rides the bike!!
-                </p>
-                <span id="techStacks">
-                    <i class="fa-brands fa-html5 fa-beat-fade fa-lg"></i>
-                    <i class="fa-brands fa-css3 fa-beat-fade fa-lg"></i>
-                    <i class="fa-brands fa-square-js fa-beat-fade fa-lg" style="color: #63E6BE;"></i>
-                </span>
-                <a href="https://kharsh560.github.io/dicee_game_by_kumar_harsh/" id="extLinkAnchor" target="_blank"><img
-                        src="imageResources/ExternalLink1.png" alt="extLinkIcon" id="extLink"></a>
-            </div>
+            <article class="project-card">
+                <div class="project-number">8</div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <h2>Canteen Cravings</h2>
+                        <img src="https://static.vecteezy.com/system/resources/previews/008/574/439/non_2x/school-canteen-with-different-races-pupils-in-protective-masks-standing-in-line-to-take-food-and-sitting-at-table-eating-school-life-during-covid-19-pandemic-flat-illustration-vector.jpg" alt="Background Color Changer"
+                            class="project-image">
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-badge">HTML5</span>
+                        <span class="tech-badge">CSS3</span>
+                        <span class="tech-badge">JavaScript</span>
+                    </div>
+                </div>
+                <a href="https://kharsh560.github.io/canteen_cravings_kh/" class="project-link">View Project</a>
+            </article>
+            
+            <article class="project-card">
+                <div class="project-number">8</div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <h2>BG Color Changer</h2>
+                        <img src="imageResources/BackGroundColorChangerPoster.jpeg" alt="Background Color Changer"
+                            class="project-image">
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-badge">HTML5</span>
+                        <span class="tech-badge">CSS3</span>
+                        <span class="tech-badge">JavaScript</span>
+                    </div>
+                </div>
+                <a href="https://kharsh560.github.io/Color_ChangerAPP_BY_Kumar_Harsh/" class="project-link">View Project</a>
+            </article>
+            
+            <article class="project-card">
+                <div class="project-number">9</div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <h2>The Clock</h2>
+                        <img src="imageResources/TimePoster.gif" alt="Digital Clock" class="project-image">
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-badge">HTML5</span>
+                        <span class="tech-badge">CSS3</span>
+                        <span class="tech-badge">JavaScript</span>
+                    </div>
+                </div>
+                <a href="https://kharsh560.github.io/Digital_Clock_BY_Kumar_Harsh/" class="project-link">View Project</a>
+            </article>
         </div>
-
-        <!-- 8 -->
-        <div class="work toggling invisible">
-            <img src="imageResources/BackGroundColorChangerPoster.jpeg" alt="BackGroundColorChanger"
-                class=" BackGroundColorChanger">
-            <div class="layer">
-                <h3>The background Color Changer</h3>
-                <p>Wanna set the background color according to your mood? Here's a very simple
-                    app that lets you do the same!
-                    Set the background of your beautiful display amongst the given color!
-                </p>
-                <span id="techStacks">
-                    <i class="fa-brands fa-html5 fa-beat-fade fa-lg"></i>
-                    <i class="fa-brands fa-css3 fa-beat-fade fa-lg"></i>
-                    <i class="fa-brands fa-square-js fa-beat-fade fa-lg" style="color: #63E6BE;"></i>
-                </span>
-                <a href="https://kharsh560.github.io/Color_ChangerAPP_BY_Kumar_Harsh/" id="extLinkAnchor"
-                    target="_blank"><img src="imageResources/ExternalLink1.png" alt="extLinkIcon" id="extLink"></a>
-            </div>
-        </div>
-
-        <!-- 9 -->
-        <div class="work toggling invisible">
-            <img src="imageResources/TimePoster.gif" alt="currentTime" class="currentTime">
-            <div class="layer">
-                <h3>The Clock</h3>
-                <p>Its truly said that; "The bad news is that time flies, but the good news is that you are the pilot"
-                    Hence get hold of your time with this digital clock I built as a very simple JS project!
-                </p>
-                <span id="techStacks">
-                    <i class="fa-brands fa-html5 fa-beat-fade fa-lg"></i>
-                    <i class="fa-brands fa-css3 fa-beat-fade fa-lg"></i>
-                    <i class="fa-brands fa-square-js fa-beat-fade fa-lg" style="color: #63E6BE;"></i>
-                </span>
-                <a href="https://kharsh560.github.io/Digital_Clock_BY_Kumar_Harsh/" id="extLinkAnchor"
-                    target="_blank"><img src="imageResources/ExternalLink1.png" alt="extLinkIcon" id="extLink"></a>
-            </div>
-        </div>
-
-        <!-- Over -->
-    </div>
-    <div class="centering ">
-        <a href="#myWork"><button class="showMoreButton btn-grad">Show more</button></a>
     </div>
 
-    <!-- NOTE  ########################################################## Portfolio section for mobiles ########################################################## -->
-    <div class="myPortfolioContainerMobiles">
-        <!-- 0th -> trying to put the div in href  -->
-        <!-- And it didn't work!! -->
+    <!-- ########################################################## Portfolio section for laptops (Legacy code) -->
+    <!-- <div class="work toggling invisible">
+        <img src="imageResources/dhunBrandPic.png" alt="dhunMusicStreamingWebApp" id="dhun">
+        <div class="layer">
+            <h3>Dhun music App ~ Feel the music</h3>
+            <p>This is a music streaming app which I have built myself, having all the functionality linked
+                play, pause, forward (10s) and backward, along with slider functionality! Means its a fully
+                equiped music streaming app having all the important features.
+            </p>
+            <span id="techStacks">
+                <i class="fa-brands fa-html5 fa-beat-fade fa-lg"></i>
+                <i class="fa-brands fa-css3 fa-beat-fade fa-lg"></i>
+                <i class="fa-brands fa-square-js fa-beat-fade fa-lg" style="color: #63E6BE;"></i>
+            </span>
+            <a href="https://kharsh560.github.io/dhun_Feel_the_Music_BY_Kumar_Harsh/" id="extLinkAnchor"
+                target="_blank"><img src="imageResources/ExternalLink1.png" alt="extLinkIcon" id="extLink"></a>
+        </div>
+    </div> -->
 
-        <!-- -1th -->
-        <div class="workMobiles" style="background: linear-gradient(to right, #8e0e00, #1f1c18);">
+    <!-- ########################################################## Portfolio section for mobiles (Legacy code) -->
+        <!-- <div class="workMobiles" style="background: linear-gradient(to right, #8e0e00, #1f1c18);">
             <div class="myPortfolioContainerMobilesParaDiv">
                 <span class="numberingWorkMobiles"></span>
                 <h3>To-Do list App</h3>
@@ -519,260 +577,8 @@
                 </a>
         
             </div>
-        </div>
+        </div> -->
 
-        <!-- 0th -->
-        <div class="workMobiles" style="background: linear-gradient(to right, #8e0e00, #1f1c18);">
-            <div class="myPortfolioContainerMobilesParaDiv">
-                <span class="numberingWorkMobiles"></span>
-                <h3>Currency Convertor</h3>
-                <!-- <p>A Random Password Generator is crucial for digital security. By generating unique combinations of characters, it
-                            prevents predictable patterns and reused credentials,
-                            significantly enhancing security against cyber threats and reducing data breach risks for both individuals and
-                            businesses. <br> This app build on React serves the same purpose. Do try it and let hackers dream of cracking your
-                            code!</p> -->
-                <span id="techStacks">
-                    <div class="htmlCssJsLogos">
-                        <i class="fa-brands fa-html5 fa-beat-fade fa-2xl"></i>
-                        <i class="fa-brands fa-css3 fa-beat-fade fa-2xl"></i>
-                        <img class="tailwindCSSpngForMobiles" src="./imageResources/tailwindPNG3D.png" alt="">
-                    </div>
-                    <div class="JsReactLogos">
-                        <i class="fa-brands fa-square-js fa-beat-fade fa-2xl" style="color: #63E6BE;"></i>
-                        <i class="fa-brands fa-react fa-2xl fa-bounce" style="color: #63E6BE;"></i>
-                    </div>
-                </span>
-                <a href="https://kh-currency-changer.netlify.app/" id="extLinkAnchor" target="_blank"><img
-                        src="./imageResources/linkForMobileView.png" alt="extLinkIcon" id="extLink"></a>
-            </div>
-            <div class="myPortfolioContainerMobilesImgLink">
-                <a href="https://kh-currency-changer.netlify.app/" target="_blank">
-                    <img src="./imageResources/currencyBG.webp" alt="Currency_Convertor">
-                </a>
-        
-            </div>
-        </div>
-
-        <!-- 1 -->
-        <div class="workMobiles" style="background: linear-gradient(to right, #8e0e00, #1f1c18);">
-            <div class="myPortfolioContainerMobilesParaDiv">
-                <span class="numberingWorkMobiles"></span>
-                <h3>Random Password Generator</h3>
-                <!-- <p>A Random Password Generator is crucial for digital security. By generating unique combinations of characters, it
-                    prevents predictable patterns and reused credentials,
-                    significantly enhancing security against cyber threats and reducing data breach risks for both individuals and
-                    businesses. <br> This app build on React serves the same purpose. Do try it and let hackers dream of cracking your
-                    code!</p> -->
-                    <span id="techStacks">
-                        <div class="htmlCssJsLogos">
-                            <i class="fa-brands fa-html5 fa-beat-fade fa-2xl"></i>
-                            <i class="fa-brands fa-css3 fa-beat-fade fa-2xl"></i>
-                            <img class="tailwindCSSpngForMobiles" src="./imageResources/tailwindPNG3D.png" alt="">
-                        </div>
-                        <!-- <svg height="20" preserveAspectRatio="xMidYMid" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 153.6"><linearGradient id="a" x1="-2.778%" y1="32%" y2="67.556%"><stop offset="0" stop-color="#2298bd"/><stop offset="1" stop-color="#0ed7b5"/></linearGradient><path d="M128 0C93.867 0 72.533 17.067 64 51.2 76.8 34.133 91.733 27.733 108.8 32c9.737 2.434 16.697 9.499 24.401 17.318C145.751 62.057 160.275 76.8 192 76.8c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C174.249 14.743 159.725 0 128 0zM64 76.8C29.867 76.8 8.533 93.867 0 128c12.8-17.067 27.733-23.467 44.8-19.2 9.737 2.434 16.697 9.499 24.401 17.318C81.751 138.857 96.275 153.6 128 153.6c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C110.249 91.543 95.725 76.8 64 76.8z" fill="url(#a)"/></svg> -->
-                        <!-- <svg id="tailwindIcon" height="20" preserveAspectRatio="xMidYMid" viewBox="0 0 256 154" width="20"
-                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <linearGradient id="a" x1="-2.777778%" x2="100%" y1="32%" y2="67.555556%">
-                                <stop offset="0" stop-color="#2298bd" />
-                                <stop offset="1" stop-color="#0ed7b5" />
-                            </linearGradient>
-                            <path
-                                d="m128 0c-34.1333333 0-55.4666667 17.0666667-64 51.2 12.8-17.0666667 27.7333333-23.4666667 44.8-19.2 9.737481 2.4343704 16.697363 9.4985481 24.401067 17.3184 12.549689 12.7383704 27.07437 27.4816 58.798933 27.4816 34.133333 0 55.466667-17.0666667 64-51.2-12.8 17.0666667-27.733333 23.4666667-44.8 19.2-9.737481-2.4343704-16.697363-9.4985481-24.401067-17.3184-12.549689-12.7383704-27.07437-27.4816-58.798933-27.4816zm-64 76.8c-34.1333333 0-55.46666667 17.0666667-64 51.2 12.8-17.066667 27.7333333-23.466667 44.8-19.2 9.7374815 2.43437 16.697363 9.498548 24.4010667 17.3184 12.5496889 12.73837 27.0743703 27.4816 58.7989333 27.4816 34.133333 0 55.466667-17.066667 64-51.2-12.8 17.066667-27.733333 23.466667-44.8 19.2-9.737481-2.43437-16.697363-9.498548-24.401067-17.3184-12.549689-12.7383704-27.07437-27.4816-58.798933-27.4816z"
-                                fill="url(#a)" />
-                        </svg> -->
-                        <div class="JsReactLogos">
-                            <i class="fa-brands fa-square-js fa-beat-fade fa-2xl" style="color: #63E6BE;"></i>
-                            <i class="fa-brands fa-react fa-2xl fa-bounce" style="color: #63E6BE;"></i>
-                        </div>
-                    </span>
-                    <a href="https://kh-password-generator.netlify.app/" id="extLinkAnchor" target="_blank"><img
-                            src="./imageResources/linkForMobileView.png" alt="extLinkIcon" id="extLink"></a>
-            </div>
-            <div class="myPortfolioContainerMobilesImgLink">
-                <a href="https://kh-password-generator.netlify.app/" target="_blank">
-                    <img src="./imageResources/passCodeBgImg.jpeg" alt="RandomPasswordGenerator">
-                </a>
-                
-            </div>
-        </div>
-
-        <!-- 2 -->
-        <div class="workMobiles" style="background: linear-gradient(to right, #8e0e00, #1f1c18);">
-            <div class="myPortfolioContainerMobilesParaDiv">
-                <span class="numberingWorkMobiles"></span>
-                <h3>BG Color Changer using React</h3>
-                <span id="techStacks">
-                    <!-- <i class="fa-brands fa-html5 fa-beat-fade fa-2xl"></i>
-                    <i class="fa-brands fa-css3 fa-beat-fade fa-2xl"></i>
-                    <img class="tailwindCSSpngForMobiles" src="./imageResources/tailwindPNG3D.png" alt="">
-                    <i class="fa-brands fa-square-js fa-beat-fade fa-2xl" style="color: #63E6BE;"></i>
-                    <i class="fa-brands fa-react fa-2xl fa-bounce" style="color: #63E6BE;"></i> -->
-                    <div class="htmlCssJsLogos">
-                        <i class="fa-brands fa-html5 fa-beat-fade fa-2xl"></i>
-                        <i class="fa-brands fa-css3 fa-beat-fade fa-2xl"></i>
-                        <img class="tailwindCSSpngForMobiles" src="./imageResources/tailwindPNG3D.png" alt="">
-                    </div>
-                    <div class="JsReactLogos">
-                        <i class="fa-brands fa-square-js fa-beat-fade fa-2xl" style="color: #63E6BE;"></i>
-                        <i class="fa-brands fa-react fa-2xl fa-bounce" style="color: #63E6BE;"></i>
-                    </div>
-                </span>
-                <a href="https://kh-bg-changer.netlify.app/" id="extLinkAnchor" target="_blank"><img
-                        src="./imageResources/linkForMobileView.png" alt="extLinkIcon" id="extLink"></a>
-            </div>
-            <div class="myPortfolioContainerMobilesImgLink">
-                <a href="https://kh-bg-changer.netlify.app/" target="_blank">
-                    <img src="./imageResources/bgChangerReact.jpeg" alt="BGcolorChangerReact">
-                </a>
-        
-            </div>
-        </div>
-
-        <!-- 3 -->
-        <div class="workMobiles" style="background: linear-gradient(to right, #8e0e00, #1f1c18);">
-            <div class="myPortfolioContainerMobilesParaDiv">
-                <span class="numberingWorkMobiles"></span>
-                <h3>Guess The Number Game</h3>
-                <span id="techStacks">
-                    <i class="fa-brands fa-html5 fa-beat-fade fa-2xl"></i>
-                    <i class="fa-brands fa-css3 fa-beat-fade fa-2xl"></i>
-                    <i class="fa-brands fa-square-js fa-beat-fade fa-2xl" style="color: #63E6BE;"></i>
-                </span>
-                <a href="https://kharsh560.github.io/GuessTheNumberBy_KumarHarsh/" id="extLinkAnchor" target="_blank"><img
-                        src="./imageResources/linkForMobileView.png" alt="extLinkIcon" id="extLink"></a>
-            </div>
-            <div class="myPortfolioContainerMobilesImgLink">
-                <a href="https://kharsh560.github.io/GuessTheNumberBy_KumarHarsh/" target="_blank">
-                    <img src="imageResources/GuessTheNumberPoster.avif" alt="GuessTheNumberGame">
-                </a>
-            </div>
-        </div>
-
-        <!-- 4 -->
-        <div class="workMobiles" style="background: linear-gradient(to right, #8e0e00, #1f1c18);">
-            <div class="myPortfolioContainerMobilesParaDiv">
-                <span class="numberingWorkMobiles"></span>
-                <h3>Dhun music App ~ Feel the music</h3>
-                <span id="techStacks">
-                    <i class="fa-brands fa-html5 fa-beat-fade fa-2xl"></i>
-                    <i class="fa-brands fa-css3 fa-beat-fade fa-2xl"></i>
-                    <i class="fa-brands fa-square-js fa-beat-fade fa-2xl" style="color: #63E6BE;"></i>
-                </span>
-                <a href="https://kharsh560.github.io/dhun_Feel_the_Music_BY_Kumar_Harsh/" id="extLinkAnchor" target="_blank"><img
-                        src="./imageResources/linkForMobileView.png" alt="extLinkIcon" id="extLink"></a>
-            </div>
-            <div class="myPortfolioContainerMobilesImgLink">
-                <a href="https://kharsh560.github.io/dhun_Feel_the_Music_BY_Kumar_Harsh/" target="_blank"> 
-                    <img src="imageResources/dhunBrandPic.png" alt="dhunMusicStreamingWebApp" id="dhun">
-                </a>
-            </div>
-        </div>
-
-        <!-- 5 -->
-        <div class="workMobiles" style="background: linear-gradient(to right, #8e0e00, #1f1c18);">
-            <div class="myPortfolioContainerMobilesParaDiv">
-                <span class="numberingWorkMobiles"></span>
-                <h3>The Drum Kit</h3>
-                <span id="techStacks">
-                    <i class="fa-brands fa-html5 fa-beat-fade fa-2xl"></i>
-                    <i class="fa-brands fa-css3 fa-beat-fade fa-2xl"></i>
-                    <i class="fa-brands fa-square-js fa-beat-fade fa-2xl" style="color: #63E6BE;"></i>
-                </span>
-                <a href="https://kharsh560.github.io/Drumkit_by_kumar_harsh.github.io/" id="extLinkAnchor" target="_blank"><img
-                        src="./imageResources/linkForMobileView.png" alt="extLinkIcon" id="extLink"></a>
-            </div>
-            <div class="myPortfolioContainerMobilesImgLink">
-                <a href="https://kharsh560.github.io/Drumkit_by_kumar_harsh.github.io/" target="_blank">
-                    <img src="imageResources/DrumKitPoster.jpeg" alt="DrumKitGame">
-                </a>
-            </div>
-        </div>
-
-        <!-- 6 -->
-
-        <div class="workMobiles" style="background: linear-gradient(to right, #8e0e00, #1f1c18);">
-            <div class="myPortfolioContainerMobilesParaDiv">
-                <span class="numberingWorkMobiles"></span>
-                <h3>The Bmi Calculator</h3>
-                <span id="techStacks">
-                    <i class="fa-brands fa-html5 fa-beat-fade fa-2xl"></i>
-                    <i class="fa-brands fa-css3 fa-beat-fade fa-2xl"></i>
-                    <i class="fa-brands fa-square-js fa-beat-fade fa-2xl" style="color: #63E6BE;"></i>
-                </span>
-                <a href="https://kharsh560.github.io/BMI_calculator_BY_Kumar_Harsh/" id="extLinkAnchor" target="_blank"><img
-                        src="./imageResources/linkForMobileView.png" alt="extLinkIcon" id="extLink"></a>
-            </div>
-            <div class="myPortfolioContainerMobilesImgLink">
-                <a href="https://kharsh560.github.io/BMI_calculator_BY_Kumar_Harsh/" target="_blank">
-                    <img src="imageResources/BMIposter2.webp" alt="BMIcalculator">
-                </a>
-            </div>
-        </div>
-
-        <!-- 7 -->
-
-        <div class="workMobiles" style="background: linear-gradient(to right, #8e0e00, #1f1c18);">
-            <div class="myPortfolioContainerMobilesParaDiv">
-                <span class="numberingWorkMobiles"></span>
-                <h3>The Dice Game</h3>
-                <span id="techStacks">
-                    <i class="fa-brands fa-html5 fa-beat-fade fa-2xl"></i>
-                    <i class="fa-brands fa-css3 fa-beat-fade fa-2xl"></i>
-                    <i class="fa-brands fa-square-js fa-beat-fade fa-2xl" style="color: #63E6BE;"></i>
-                </span>
-                <a href="https://kharsh560.github.io/dicee_game_by_kumar_harsh/" id="extLinkAnchor" target="_blank"><img
-                        src="./imageResources/linkForMobileView.png" alt="extLinkIcon" id="extLink"></a>
-            </div>
-            <div class="myPortfolioContainerMobilesImgLink">
-                <a href="https://kharsh560.github.io/dicee_game_by_kumar_harsh/" target="_blank">
-                    <img src="imageResources/DiceGamePoster.jpeg" alt="DiceGame" class=" DiceGame">
-                </a>
-            </div>
-        </div>
-
-        <!-- 8 -->
-
-        <div class="workMobiles" style="background: linear-gradient(to right, #8e0e00, #1f1c18);">
-            <div class="myPortfolioContainerMobilesParaDiv">
-                <span class="numberingWorkMobiles"></span>
-                <h3>The background Color Changer</h3>
-                <span id="techStacks">
-                    <i class="fa-brands fa-html5 fa-beat-fade fa-2xl"></i>
-                    <i class="fa-brands fa-css3 fa-beat-fade fa-2xl"></i>
-                    <i class="fa-brands fa-square-js fa-beat-fade fa-2xl" style="color: #63E6BE;"></i>
-                </span>
-                <a href="https://kharsh560.github.io/Color_ChangerAPP_BY_Kumar_Harsh/" id="extLinkAnchor" target="_blank"><img
-                        src="./imageResources/linkForMobileView.png" alt="extLinkIcon" id="extLink"></a>
-            </div>
-            <div class="myPortfolioContainerMobilesImgLink">
-                <a href="https://kharsh560.github.io/Color_ChangerAPP_BY_Kumar_Harsh/" target="_blank">
-                    <img src="imageResources/BackGroundColorChangerPoster.jpeg" alt="BackGroundColorChanger"
-                        class=" BackGroundColorChanger">
-                </a>
-            </div>
-        </div>
-
-        <!-- 9 -->
-        <div class="workMobiles" style="background: linear-gradient(to right, #8e0e00, #1f1c18);">
-            <div class="myPortfolioContainerMobilesParaDiv">
-                <span class="numberingWorkMobiles"></span>
-                <h3>The Clock</h3>
-                <span id="techStacks">
-                    <i class="fa-brands fa-html5 fa-beat-fade fa-2xl"></i>
-                    <i class="fa-brands fa-css3 fa-beat-fade fa-2xl"></i>
-                    <i class="fa-brands fa-square-js fa-beat-fade fa-2xl" style="color: #63E6BE;"></i>
-                </span>
-                <a href="https://kharsh560.github.io/Digital_Clock_BY_Kumar_Harsh/" id="extLinkAnchor" target="_blank"><img
-                        src="./imageResources/linkForMobileView.png" alt="extLinkIcon" id="extLink"></a>
-            </div>
-            <div class="myPortfolioContainerMobilesImgLink">
-                <a href="https://kharsh560.github.io/Digital_Clock_BY_Kumar_Harsh/" target="_blank">
-                    <img src="imageResources/TimePoster.gif" alt="currentTime" class="currentTime">
-                </a>
-            </div>
-        </div>
-
-    </div>
 
     <hr>
 
@@ -794,8 +600,8 @@
     </div> -->
 
     <div id="blogTopic">
-        <!-- For mobiles -->
 
+        <!-- For mobiles -->
         <div class="e-card playing">
             <div class="image"></div>
         
@@ -828,8 +634,9 @@
             </div>
         </div>
 
-        <!-- For laptops -->
 
+
+        <!-- For laptops -->
         <div class="flipCardContainer">
             <div class="flip-card">
                 <div class="flip-card-inner">
@@ -850,8 +657,8 @@
 
     <!-- ########################################################## Slider for post ##########################################################  -->
     <div id="sliderContainer">
-        <label for="customSlider">Timeline :-</label>
-        <span id="sliderValue">20</span>
+        <label for="customSlider" id="Timeline">Timeline :-</label>
+        <span id="sliderValue">---</span>
         <div id="sliderButtonsContainer">
             <!-- <i class="fa-solid fa-forward" style="color: #74C0FC;"></i> -->
             <button class="sliderButtons" id="sliderButtonBk"n>Previous</button>
@@ -1151,21 +958,21 @@
 
     <div id="contactMeMainContainer">
         <div class="contact-me">
-            <img class="mail_png" src="https://cdn-icons-png.flaticon.com/512/7324/7324727.png" alt="message">
-            <h2>Feel free to contact me</h2>
+            <!-- <img class="mail_png" src="https://cdn-icons-png.flaticon.com/512/7324/7324727.png" alt="message"> -->
+            <!-- <h2>Feel free to contact me</h2> -->
             <!-- <p class="p4">If you wish, you can;</p> -->
             <a class="btn-grad" href="mailto:kharsh560@gmail.com">Send Me a Mail</a>
             <!-- <h3 class="requestToFollow">You can follow me on these social media handels present in the footer links! -->
             </h3>
             <div class="bottom_container">
-                <a class="footer-link" target="_blank" href="https://www.linkedin.com/in/kumar-harsh-468a22253"><i
-                        class="fa-brands fa-linkedin fa-2xl" style="color: #a7aaae;"></i></a>
-                <a class="footer-link" target="_blank" href="https://www.instagram.com/kharsh560/"><i
-                        class="fa-brands fa-instagram fa-2xl" style="color: #8e8f90;"></i></a>
                 <a class="footer-link" target="_blank" href="https://github.com/kharsh560"><i
                         class="fa-brands fa-github fa-2xl" style="color: #8c8c8c;"></i></a>
                 <a class="footer-link" target="_blank" href="https://twitter.com/kharsh560"><i
-                        class="fa-brands fa-twitter fa-2xl" style="color: #999999;"></i></a>
+                        class="fa-brands fa-x-twitter fa-2xl" style="color: #999999;"></i></a>
+                <a class="footer-link" target="_blank" href="https://www.linkedin.com/in/kharsh560/"><i
+                        class="fa-brands fa-linkedin fa-2xl" style="color: #a7aaae;"></i></a>
+                <a class="footer-link" target="_blank" href="https://www.instagram.com/kharsh560/"><i
+                        class="fa-brands fa-instagram fa-2xl" style="color: #8e8f90;"></i></a>
             </div>
             <p class="khh">©KUMAR_HARSH@kharsh560</p>
         </div>
@@ -1173,5 +980,22 @@
 
 </body>
 <script src="KH_aboutMeFunctioning.js"></script>
+<script>
+    // Get the button
+    var backToTopButton = document.getElementById('back-to-top');
 
+    // Show the button when the user scrolls down 100px from the top of the document
+    window.onscroll = function () {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    };
+
+    // Scroll the page to the top when the button is clicked
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
 </html>
