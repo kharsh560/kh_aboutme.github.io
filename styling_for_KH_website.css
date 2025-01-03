@@ -256,6 +256,11 @@ a {
 }
 
 /* NOTE: New hero section (Laptops) (29/12/24) */
+
+#resumeContainer {
+    cursor: pointer;
+}
+
 #app {
     min-height: 100vh;
     padding: 2rem 4rem;
