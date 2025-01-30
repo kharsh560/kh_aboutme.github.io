@@ -835,7 +835,7 @@ hr:after {
 
 .linkedin-link {
     display: inline-block;
-    margin-top: 2rem;
+    margin-top: 1rem;
     color: var(--primary-color);
     text-decoration: none;
     font-weight: 500;
@@ -867,6 +867,17 @@ hr:after {
 
 
 /* #####################################################################  Portfolio portion for laptops ##################################################################### */
+
+
+.resumeLinkForAdvWork {
+    display: inline-block;
+    margin-top: 0.5rem;
+    margin-bottom: 0.8rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
 
 #myWorkContainerCont {
     max-width: 1200px;
@@ -1035,120 +1046,98 @@ hr:after {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* Ensures proper spacing between elements */
-    background: #2a2a2a;
+    background: linear-gradient(145deg, #1f1f1f, #2d2d2d);
     border-radius: 16px;
     overflow: hidden;
-    border: 1px solid #3a3a3a;
+    border: 1px solid #444;
     position: relative;
     transition: all 0.3s ease;
-    padding: 1rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 1.2rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
     height: 450px;
-    /* Fixed height */
+    color: #f0f0f0;
 }
 
 .project-card:hover {
-    border-color: #ff4d4d;
-    /* Bright red border on hover */
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(255, 77, 77, 0.3);
-    /* Red shadow on hover */
+    border-color: #ff6666;
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(255, 102, 102, 0.4);
 }
 
 .project-number {
-    background: #ff4d4d;
-    /* Bright red */
-    width: 2.5rem;
-    /* Reduced size */
-    height: 2.5rem;
+    background: #ff6666;
+    width: 2.8rem;
+    height: 2.8rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.3rem;
-    /* Adjusted font size */
+    font-size: 1.4rem;
     font-weight: bold;
     color: #ffffff;
-    /* White text for better contrast */
-    margin-bottom: 1rem;
-    /* Reduced gap */
+    box-shadow: 0 4px 10px rgba(255, 102, 102, 0.3);
 }
 
 .project-content {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    /* Ensures content stretches to fill space */
 }
 
 .project-header h2 {
-    font-size: 1.8rem;
-    /* Reduced font size */
-    font-weight: 600;
+    font-size: 2rem;
+    font-weight: 700;
     margin-bottom: 1rem;
-    color: #f8f8f8;
-    /* Softer white */
+    color: #ffffff;
 }
 
 .project-image {
-    height: 150px;
-    width: 150px;
-    /* Reduced height */
+    height: 160px;
+    width: 160px;
     object-fit: cover;
     border-radius: 12px;
     margin-bottom: 1.5rem;
-    /* Reduced margin */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.project-image:hover {
+    transform: scale(1.05);
 }
 
 .tech-stack {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.8rem;
-    /* Reduced gap */
+    gap: 0.6rem;
     margin: 1.5rem 0;
 }
 
 .tech-badge {
-    color: #ff8080;
-    /* Softer red for badges */
-    font-size: 1.1rem;
-    /* Adjusted font size */
-    font-weight: 500;
-}
-
-.tech-badge:not(:last-child)::after {
-    content: '';
-    display: inline-block;
-    width: 3px;
-    /* Reduced size */
-    height: 3px;
-    background: #ff4d4d;
-    /* Bright red separator */
-    border-radius: 50%;
-    margin-left: 0.8rem;
-    vertical-align: middle;
+    color: #ff9999;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: rgba(255, 102, 102, 0.1);
+    padding: 0.3rem 0.6rem;
+    border-radius: 8px;
 }
 
 .project-link {
     display: inline-block;
-    background: #ff4d4d;
+    background: linear-gradient(145deg, #ff4d4d, #d43a3a);
     color: #ffffff;
     text-decoration: none;
-    padding: 0.8rem 2rem;
-    border-radius: 100px;
-    font-size: 1.1rem;
-    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 700;
     transition: all 0.3s ease;
-    margin-top: auto;
-    /* Pushes the button to the bottom */
     text-align: center;
+    margin-top: auto;
 }
 
 .project-link:hover {
-    background: #d43a3a;
-    /* Darker red on hover */
-    transform: translateY(-2px);
+    background: #ff6666;
+    transform: translateY(-3px);
 }
 
 
@@ -1746,6 +1735,10 @@ hr:after {
         text-align: center;
     }
 
+    .resumeLinkForAdvWork {
+        margin-left: 1rem;
+    }
+
     #portfolioSection {
         margin-bottom: 1.4rem;
     }
@@ -1758,42 +1751,45 @@ hr:after {
         gap: 0.5rem;
     }
 
-    .project-card {
-        padding: 0.5rem;
-        height: 350px;
-    }
+   .project-card {
+       padding: 0.5rem;
+       height: 350px;
+   }
 
-    .project-header h2 {
-        font-size: 1.3rem;
-        margin: 0.5rem 0rem;
-    }
+   .project-header h2 {
+       font-size: 1.3rem;
+       margin: 0.5rem 0rem;
+   }
 
-    .project-number {
-        font-size: 0.8rem;
-        width: 1.5rem;
-        height: 1.5rem;
-        margin-bottom: 0.5rem;
-    }
+   .project-number {
+       font-size: 0.8rem;
+       width: 1.5rem;
+       height: 1.5rem;
+       margin-bottom: 0.5rem;
+   }
 
-    .project-content{
-        justify-content: center;
-    }
-    .project-image{
-        height: 100px;
-        width: 100px;
-        margin: 0px;
-    }
-    .tech-stack{
-        margin: 1rem 0rem;
-    }
+   .project-content {
+       justify-content: center;
+   }
 
-    .tech-badge{
-        font-size: 0.8rem;
-    }
+   .project-image {
+       height: 100px;
+       width: 100px;
+       margin: 0px;
+   }
 
-    .project-link{
-        font-size: 0.8rem;
-    }
+   .tech-stack {
+       margin: 1rem 0rem;
+   }
+
+   .tech-badge {
+       font-size: 0.8rem;
+   }
+
+   .project-link {
+       font-size: 0.7rem;
+       padding: 0.5rem 1.5rem;
+   }
 
 
 
