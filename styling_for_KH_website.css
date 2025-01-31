@@ -259,6 +259,13 @@ a {
 
 #resumeContainer {
     cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.fileIcon {
+    width: 40px;
+    height: 40px;
 }
 
 #app {
@@ -1054,7 +1061,7 @@ hr:after {
     transition: all 0.3s ease;
     padding: 1.2rem;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-    height: 450px;
+    height: fit-content;
     color: #f0f0f0;
 }
 
@@ -1096,7 +1103,6 @@ hr:after {
     width: 160px;
     object-fit: cover;
     border-radius: 12px;
-    margin-bottom: 1.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
 }
@@ -1105,7 +1111,7 @@ hr:after {
     transform: scale(1.05);
 }
 
-.tech-stack {
+/* .tech-stack {
     display: flex;
     flex-wrap: wrap;
     gap: 0.6rem;
@@ -1119,7 +1125,59 @@ hr:after {
     background: rgba(255, 102, 102, 0.1);
     padding: 0.3rem 0.6rem;
     border-radius: 8px;
+} */
+
+.tech-stack {
+    display: flex;
+    gap: 0.6rem;
+    margin: 0.5rem 0;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* Adjust height as per your card design */
 }
+
+.tech-badge {
+    color: #ff9999;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: rgba(255, 102, 102, 0.1);
+    padding: 0.3rem;
+    border-radius: 8px;
+    white-space: nowrap;
+    position: relative;
+}
+
+.tech-stack::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    /* background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5)); */
+}
+
+@keyframes scrollTags {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: -225%;
+    }
+}
+
+.tech-badge {
+    animation: scrollTags 10s linear infinite;
+    position: relative;
+}
+
+
 
 .project-link {
     display: inline-block;
@@ -1753,19 +1811,17 @@ hr:after {
 
    .project-card {
        padding: 0.5rem;
-       height: 350px;
    }
 
    .project-header h2 {
-       font-size: 1.3rem;
+       font-size: 1rem;
        margin: 0.5rem 0rem;
    }
 
    .project-number {
-       font-size: 0.8rem;
-       width: 1.5rem;
-       height: 1.5rem;
-       margin-bottom: 0.5rem;
+       font-size: 0.6rem;
+       width: 1rem;
+       height: 1rem;
    }
 
    .project-content {
@@ -1779,7 +1835,7 @@ hr:after {
    }
 
    .tech-stack {
-       margin: 1rem 0rem;
+       margin: 0.5rem 0rem;
    }
 
    .tech-badge {
