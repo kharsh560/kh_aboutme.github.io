@@ -1177,6 +1177,11 @@ hr:after {
     position: relative;
 }
 
+.projectLinksContainer {
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+}
 
 
 .project-link {
@@ -1844,7 +1849,7 @@ hr:after {
 
    .project-link {
        font-size: 0.7rem;
-       padding: 0.5rem 1.5rem;
+       padding: 0.2rem 1rem;
    }
 
 
